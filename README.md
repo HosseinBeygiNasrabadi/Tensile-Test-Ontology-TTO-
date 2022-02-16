@@ -1,6 +1,6 @@
 # Tensile-Test
 
-Ontology for the tensile testing according to the DIN_EN_ISO_10319-1 standard
+Ontology for the tensile testing according to the DIN_EN_ISO_6892-1 standard
 
 ## Getting started
 

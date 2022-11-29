@@ -8,1059 +8,1060 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestMeasurement">
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ChoiceOfTheMethodAndRate"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ControlTemperature"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AccuracyOfTestingApparatus"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#Gripping"/>
-    <bfo:has_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestPiece"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#Loading"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#SettingTheForceZeroPoint"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestMeasurementAnalysis"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestingMachine"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MarkingTheOriginalGaugeLength"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfOriginalCrossSectionArea"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestMeasurementAnalysis">
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#VarificationOfPermanentSetStrength"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageTotalExtensionAtFracture"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfFinalGaugeLengthAfterFracture"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StressCalculation"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfExtensionAtMaximumForce"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfProofStrength"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfFractureStrength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfModulusOfElasticity"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfMaximumCrossSectionAreaAfterFracture"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StrainCalculation"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfLowerYieldStrength"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateTensileTestUncertainity"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfUpperYieldStrength"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfMaximumForce"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageElongationAfterFracture"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfThePercentageYieldPointExtension"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfAnalysing"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageReductionOfArea"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfTensileStrength"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PlottingStressStrainCurve"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StressStrainCurve">
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfFractureStrength"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfModulusOfElasticity"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfThePercentageYieldPointExtension"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfLowerYieldStrength"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ImageMetadataSet"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#VarificationOfPermanentSetStrength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfUpperYieldStrength"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfProofStrength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UltimateTensileStrength_">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/UltimateTensileStrength"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfExtensionAtMaximumForce"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfUltimateTensileStrength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfStrainRate">
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfStrainRate">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#OriginalCrossSectionArea">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageReductionOfArea"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfTensileStrength"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalExtent"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateTensileTestUncertainity"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfOriginalCrossSectionArea"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StressCalculation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfProofStrength">
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.02"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.1"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ProofStrength_PlasticExtension"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.01"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ProofStrength_TotalExtension"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp1"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#VarificationOfPermanentSetStrength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.5"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp2"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp5"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.05"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfFractureStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#OriginalGaugeLength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageElongationAfterFracture"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateTensileTestUncertainity"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfOriginalGaugeLength"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StrainCalculation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StressCalculation">
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StrainCalculation"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStress"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StressFunction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.5">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.5"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageReductionOfAreaFunction">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfFractureStrength">
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfFinalGaugeLengthAfterFracture"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#FractureStrength"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStrain">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Strain"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfModulusOfElasticity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestStrainDataSet"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PlottingStressStrainCurve"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateTensileTestUncertainity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StrainFunction">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfLowerYieldStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestTemperature">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestTemperature"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Temperature"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ExtensionAtMaximumForceFunction">
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestPiece">
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPiecePreparation"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Specimen"/>
-    <cco:hasFunction rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestPieceFunction"/>
-    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CoefficientOfProportionality"/>
-    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceCrossSectionShape"/>
-    <bfo:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceTotalLength"/>
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceIdentifier"/>
-    <bfo:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceparallelLength"/>
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceManufacturing"/>
-    <cco:is_made_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CopperAlloy"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp2">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp2"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfUltimateTensileStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#VarificationOfPermanentSetStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfThePercentageYieldPointExtension"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PermanentSetStrength"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#">
-    <dc:title>Tensile Test Ontology</dc:title>
-    <dc:creator>Birgit Skrotzki</dc:creator>
-    <owl:versionInfo>2.0.0</owl:versionInfo>
-    <dc:creator>Hossein Beygi Nasrabadi</dc:creator>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/occures_on">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CrossheadSeparationRate">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfCrossheadSeparationRate"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Speed"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StressRate">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasutrementOfStressRate"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Speed"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfFinalGaugeLengthAfterFracture">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfMeasuring"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageElongationAfterFracture"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#FinalGaugeLengthAfterFracture"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#Tensiletest_">
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDataFile"/>
-    <rdf:type rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTest"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:has_input rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestPiece"/>
-    <mseo:in_accordance_with rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
-    <cco:process_started_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestMeasurement"/>
-    <cco:occurs_on rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDate"/>
-    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestingMachine"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfCrossheadSeparationRate">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/ElasticModulus">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageElongationAfterFractureFunction">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestSpeed">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Speed"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestSpeed"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Force">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfTensileStrength">
-    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileStrengthFunction"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UltimateTensileStrength_"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfExtensionAtMaximumForce"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#SlopOfElasticPartOfTheStressStreainCurve">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementofSlopOfElasticPartOfTheStressStreainCurve"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Stiffness"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfExtensionAtMaximumForce"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfModulusOfElasticity">
-    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ModuludOfElasticityFunction"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ModulusOfElasticity"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#SlopOfElasticPartOfTheStressStreainCurve"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfMaximumForce"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MaximumCrossSectionAreaAfterFracture">
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateTensileTestUncertainity"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfMaximumCrossSectionAreaAfterFracture"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageReductionOfArea"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalExtent"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfThePercentageYieldPointExtension">
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageYieldPointExtension"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfModulusOfElasticity"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPiecePreparation">
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPiecePreparatiomMethod"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfPercentageTotalExtensionAtFracture">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfMaximumCrossSectionAreaAfterFracture">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfMeasuring"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageReductionOfArea"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MaximumCrossSectionAreaAfterFracture"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp5">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp5"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfPercentageTotalExtensionAtMaximumForce">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestForce">
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateTensileTestUncertainity"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfAppliedLoadingForceDataSet"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StressCalculation"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Force"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfMaximumForce"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/EngineeringStrain">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#LowerYieldStrength_">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/LowerYieldStrength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfLowerYieldStrength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageTotalExtensionAtFracture">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageTotalExtensionAtFracture"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageTotalExtensionAtFractureFunction"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfMaximumCrossSectionAreaAfterFracture"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TransportFromProducer">
-    <cco:starts_at rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#Producer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfLocationChange"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.01">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.01"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp1">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Stiffness">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageTotalExtensionAtMaximumForce">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/EngineeringStrain"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfPercentageTotalExtensionAtMaximumForce"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfPercentagePlasticExtensionAtMaximumForce">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfModulusOfElasticity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestTemperature">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#SettingTheForceZeroPoint">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestingMachine"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#Gripping"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageElongationAfterFracture">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/EngineeringStrain"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfPercentageElongationAfterFracture"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ProofStrength_PlasticExtension">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfProofStrength_PlasticExtension"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/PlasticStrain"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfOriginalGaugeLength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MaximumForce">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Force"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfTensileStrength"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfMaximumForce"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfPercentageReductionOfArea">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/derives_into">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStress">
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfTensileStrength"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PlottingStressStrainCurve"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#VarificationOfPermanentSetStrength"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfUpperYieldStrength"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestStressDataSet"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfProofStrength"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfFractureStrength"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfModulusOfElasticity"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Stress"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfLowerYieldStrength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDateIdentifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CalendarDateIdentifier"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StressFunction">
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfLowerYieldStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#LowerYieldStrength_"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfProofStrength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PermanentSetStrength">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfPermanentSetStrength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/MechanicalStrength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Length">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PlottingStressStrainCurve">
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfUpperYieldStrength"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StressStrainCurve"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfProofStrength_TotalExtension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageYieldPointExtension">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfThePercentageYieldPointExtension"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/EngineeringStrain"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDisplacement">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfDisplacementDataSet"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfFinalGaugeLengthAfterFracture"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Deformation"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfExtensionAtMaximumForce"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StrainCalculation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CopperAlloy">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceCompositionIdentifier"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ProportionalRatioMeasurementInformationContentEntity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDateFileLocation">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageTotalExtensionAtFracture">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/EngineeringStrain"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfPercentageTotalExtensionAtFracture"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfAppliedLoadingTimeDataSet">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/RawDataSet"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/RawDataSet">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/ActOfAnalysing">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ModuludOfElasticityFunction">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageReductionOfArea">
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateTensileTestUncertainity"/>
-    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageReductionOfAreaFunction"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageReductionOfArea"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ControlTemperature">
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfOriginalCrossSectionArea"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestTemperature"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/File">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.2"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ExtensometerGaugeLength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfExtensometerGaugeLength"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageTotalExtensionAtFracture"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfThePercentageYieldPointExtension"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateTensileTestUncertainity"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfExtensionAtMaximumForce"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ChoiceOfTheMethodAndRate">
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestSpeed"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestingMachine"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#EstimatedStrainRateOverTheParallelLength"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StressRate"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StrainRate"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CrossheadSeparationRate"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#SeparationPoint"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#Loading"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_process_part">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfUpperYieldStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfLowerYieldStrength"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UpperYieldStrength_"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StrainRate">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Speed"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfStrainRate"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfProofStrength_PlasticExtension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTest">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://purl.matolab.org/mseo/mid/Expriment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfExtensionAtMaximumForce">
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageTotalExtensionAtMaximumForce"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentagePlasticExtensionAtMaximumForce"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ExtensionAtMaximumForceFunction"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfFractureStrength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#FinalGaugeLengthAfterFracture">
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageTotalExtensionAtFracture"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfFinalGaugeLengthAfterFracture"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageElongationAfterFracture"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Regulation"/>
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandardIdentifier"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#SeparationPoint">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Strain"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfSeparationPoint"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestPieceFunction">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateTensileTestUncertainity">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestUncertainityFunction"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestUncertainity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceparallelLength">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestPieceParallelLength"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
-    <cco:affects rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MarkingTheOriginalGaugeLength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.02">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.02"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestUncertainity">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DeviationMeasurementInformationContentEntity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTensileTestUncertainity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfOriginalCrossSectionArea">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#OriginalCrossSectionArea"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MarkingTheOriginalGaugeLength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfPercentageElongationAfterFracture">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageTotalExtensionAtFractureFunction">
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/starts_at">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfThePercentageYieldPointExtension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDate">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Day"/>
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDateIdentifier"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#Gripping">
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ChoiceOfTheMethodAndRate"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
-    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestingMachine"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTensileTestUncertainity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CoefficientOfProportionality">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/SizeQuality"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceCoefficientOfProportionality"/>
-    <cco:affects rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfOriginalCrossSectionArea"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasutrementOfStressRate">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfAppliedLoadingForceDataSet">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/RawDataSet"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#Producer">
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ProducerName"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Organisation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfMaximumForce">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestPieceParallelLength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentagePlasticExtensionAtMaximumForce">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/PlasticStrain"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfPercentagePlasticExtensionAtMaximumForce"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestStrainDataSet">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/AnalysedDataSet"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/process_started_by">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfAnalysing">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AccuracyOfTestingApparatus">
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#SettingTheForceZeroPoint"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceManufacturing">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ProcessHistory"/>
-    <cco:has_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TransportFromProducer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageElongationAfterFracture">
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfPercentageTotalExtensionAtFracture"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageElongationAfterFracture"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageElongationAfterFractureFunction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfExtensometerGaugeLength">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestStressDataSet">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/AnalysedDataSet"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/in_accordance_with">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StrainCalculation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StrainFunction"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PlottingStressStrainCurve"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStrain"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceCrossSectionShape">
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceCrossSectionShapeIdentifier"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ShapeQuality"/>
-    <cco:affects rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfOriginalCrossSectionArea"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestTime">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfAppliedLoadingTimeDataSet"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MultiSecondTemporalInterval"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UpperYieldStrength_">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfUpperYieldStrength"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/UpperYieldStrength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfDisplacementDataSet">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/RawDataSet"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestUncertainityFunction">
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#Loading">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
-    <cco:occures_on rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestTime"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDisplacement"/>
-    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestingMachine"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestForce"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StressCalculation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceCoefficientOfProportionality">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ProportionalRatioMeasurementInformationContentEntity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalExtent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestingMachineArtifactFunction">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfMaximumCrossSectionAreaAfterFracture">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_part">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_input">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/YieldStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PercentageReductionOfArea">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfPercentageReductionOfArea"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Deformation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ProcessHistory">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceTotalLength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:affects rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MarkingTheOriginalGaugeLength"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestPieceTotalLength"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfUpperYieldStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.05">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.05"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDataFile">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/File"/>
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDateFileLocation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Temperature">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementofSlopOfElasticPartOfTheStressStreainCurve">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfPositionChange">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfOriginalCrossSectionArea">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.1">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#YieldStrength_Rp0.1"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceCrossSectionShapeIdentifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceIdentifier">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestPieceTotalLength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/PlasticStrain">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SizeQuality">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileStrengthFunction">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfMaximumForce">
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DeterminationOfTensileStrength"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MaximumForce"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestingMachine">
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestingMachineIdentifier"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/UniversalTestingMachine"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:hasFunction rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestingMachineArtifactFunction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_accessory">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfPermanentSetStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/LowerYieldStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#EstimatedStrainRateOverTheParallelLength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Speed"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfEstimatedStrainRateOverTheParallelLength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/UltimateTensileStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPiecePreparatiomMethod">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Regulation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/UniversalTestingMachine">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MarkingTheOriginalGaugeLength">
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AccuracyOfTestingApparatus"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ExtensometerGaugeLength"/>
-    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#OriginalGaugeLength"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfPositionChange"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ShapeQuality">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfFinalGaugeLengthAfterFracture">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DeviationMeasurementInformationContentEntity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Organisation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestSpeed">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceCompositionIdentifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/hasFunction">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Specimen">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_input_of">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfEstimatedStrainRateOverTheParallelLength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ProofStrength_TotalExtension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfProofStrength_TotalExtension"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/EngineeringStrain"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MultiSecondTemporalInterval">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestTemperature">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/has_output">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.05">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.05"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CalendarDateIdentifier">
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CalculateTensileTestUncertainity">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestUncertainityFunction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestUncertainity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MarkingTheOriginalGaugeLength">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfPositionChange"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#OriginalGaugeLength"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#AccuracyOfTestingApparatus"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ExtensometerGaugeLength"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageReductionOfArea">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageReductionOfAreaFunction"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageReductionOfArea"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CalculateTensileTestUncertainity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestMeasurementAnalysis">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfAnalysing"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageReductionOfArea"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfFractureStrength"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageElongationAfterFracture"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CalculateTensileTestUncertainity"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageTotalExtensionAtFracture"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PlottingStressStrainCurve"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfFinalGaugeLengthAfterFracture"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfTensileStrength"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StrainCalculation"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfMaximumCrossSectionAreaAfterFracture"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StressCalculation"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfExtensionAtMaximumForce"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#VarificationOfPermanentSetStrength"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfProofStrength"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfMaximumForce"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfLowerYieldStrength"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfThePercentageYieldPointExtension"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfUpperYieldStrength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp2">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp2"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestSpeed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PlottingStressStrainCurve">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfUpperYieldStrength"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StressStrainCurve"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStrain">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CalculateTensileTestUncertainity"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Strain"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PlottingStressStrainCurve"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestStrainDataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.1">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.1"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestDateIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CalendarDateIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestPiece">
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceManufacturing"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPiecePreparation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceCrossSectionShape"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CoefficientOfProportionality"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceIdentifier"/>
+    <bfo:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceparallelLength"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Specimen"/>
+    <cco:is_made_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CopperAlloy"/>
+    <bfo:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceTotalLength"/>
+    <cco:hasFunction rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestPieceFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#">
+    <dc:creator>Birgit Skrotzki</dc:creator>
+    <dc:title>Tensile Test Ontology</dc:title>
+    <owl:versionInfo>2.0.2</owl:versionInfo>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dc:creator>Hossein Beygi Nasrabadi</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStress">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#VarificationOfPermanentSetStrength"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfProofStrength"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfFractureStrength"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfLowerYieldStrength"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestStressDataSet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Stress"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfUpperYieldStrength"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PlottingStressStrainCurve"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfTensileStrength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileStrengthFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceIdentifier">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#OriginalCrossSectionArea">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalExtent"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfOriginalCrossSectionArea"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageReductionOfArea"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfTensileStrength"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CalculateTensileTestUncertainity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StressCalculation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestDateIdentifier"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Day"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ChoiceOfTheMethodAndRate">
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CrossheadSeparationRate"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#Loading"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StressRate"/>
+    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestingMachine"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StrainRate"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#EstimatedStrainRateOverTheParallelLength"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestSpeed"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#SeparationPoint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/YieldStrength">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/affects">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#Loading">
+    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestingMachine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestDisplacement"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestForce"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StressCalculation"/>
+    <cco:occures_on rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestTime"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction">
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfExtensometerGaugeLength">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfUltimateTensileStrength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CoefficientOfProportionality">
+    <cco:affects rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfOriginalCrossSectionArea"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceCoefficientOfProportionality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/SizeQuality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SizeQuality">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Stress">
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ProofStrength_TotalExtension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfProofStrength_TotalExtension"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/EngineeringStrain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.5">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.5"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfFinalGaugeLengthAfterFracture">
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageElongationAfterFracture"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#FinalGaugeLengthAfterFracture"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfMeasuring"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfOriginalCrossSectionArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfLowerYieldStrength">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#LowerYieldStrength_"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfProofStrength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/LowerYieldStrength">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Strain">
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfExtensionAtMaximumForce">
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ExtensionAtMaximumForceFunction"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageTotalExtensionAtMaximumForce"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfFractureStrength"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentagePlasticExtensionAtMaximumForce"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/ActOfAnalysing">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceparallelLength">
+    <cco:affects rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MarkingTheOriginalGaugeLength"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestPieceParallelLength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestDateFileLocation">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageElongationAfterFractureFunction">
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StressStrainCurve">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#VarificationOfPermanentSetStrength"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfProofStrength"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfFractureStrength"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfLowerYieldStrength"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfThePercentageYieldPointExtension"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfUpperYieldStrength"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ImageMetadataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfModulusOfElasticity">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestPieceTotalLength">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestStrainDataSet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/AnalysedDataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestMeasurement">
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfOriginalCrossSectionArea"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#SettingTheForceZeroPoint"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#AccuracyOfTestingApparatus"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ControlTemperature"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+    <bfo:has_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestPiece"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ChoiceOfTheMethodAndRate"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#Loading"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#Gripping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestingMachine"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MarkingTheOriginalGaugeLength"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestMeasurementAnalysis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#UltimateTensileStrength_">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfExtensionAtMaximumForce"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/UltimateTensileStrength"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfUltimateTensileStrength"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfSeparationPoint">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageTotalExtensionAtFractureFunction">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/BreackingStrength">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/occurs_on">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestForce">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfAppliedLoadingForceDataSet"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfMaximumForce"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Force"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CalculateTensileTestUncertainity"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StressCalculation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CalendarDateIdentifier">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/ImageMetadataSet">
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageElongationAfterFracture">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/EngineeringStrain"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfPercentageElongationAfterFracture"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StressCalculation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StrainCalculation"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StressFunction"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStress"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ShapeQuality">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceManufacturing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:has_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TransportFromProducer"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ProcessHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasutrementOfStressRate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Stiffness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PermanentSetStrength">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfPermanentSetStrength"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/MechanicalStrength"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/process_precedes">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/MechanicalStrength">
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Deformation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Day">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#FractureStrength">
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ModuludOfElasticityFunction">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfFractureStrength"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/BreackingStrength"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TensileTestingMachineIdentifier">
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageTotalExtensionAtMaximumForce">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfPercentageTotalExtensionAtMaximumForce"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/EngineeringStrain"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ExtensionAtMaximumForceFunction">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageYieldPointExtension">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/EngineeringStrain"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfThePercentageYieldPointExtension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StrainCalculation">
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStrain"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StrainFunction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PlottingStressStrainCurve"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.2">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfTensileStrength">
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#UltimateTensileStrength_"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileStrengthFunction"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfExtensionAtMaximumForce"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceCompositionIdentifier">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#Gripping">
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ChoiceOfTheMethodAndRate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestingMachine"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ProofStrength_PlasticExtension">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/PlasticStrain"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfProofStrength_PlasticExtension"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MaximumCrossSectionAreaAfterFracture">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CalculateTensileTestUncertainity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageReductionOfArea"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalExtent"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfMaximumCrossSectionAreaAfterFracture"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#FractureStrength">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/BreackingStrength"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfFractureStrength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Temperature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfPercentageTotalExtensionAtMaximumForce">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfPercentageElongationAfterFracture">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp1">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfProofStrength">
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.5"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ProofStrength_PlasticExtension"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp5"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.2"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ProofStrength_TotalExtension"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.05"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.1"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.01"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.02"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#VarificationOfPermanentSetStrength"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp1"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfAppliedLoadingTimeDataSet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/RawDataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestUncertainityFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/has_quality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#OriginalGaugeLength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageElongationAfterFracture"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfOriginalGaugeLength"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StrainCalculation"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CalculateTensileTestUncertainity"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandardIdentifier"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Regulation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_accessory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfDisplacementDataSet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/RawDataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/occures_on">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#AccuracyOfTestingApparatus">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#SettingTheForceZeroPoint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#UpperYieldStrength_">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfUpperYieldStrength"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/UpperYieldStrength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfMaximumCrossSectionAreaAfterFracture">
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageReductionOfArea"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MaximumCrossSectionAreaAfterFracture"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfMeasuring"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestTime">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MultiSecondTemporalInterval"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfAppliedLoadingTimeDataSet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfPercentageReductionOfArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/hasFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfOriginalCrossSectionArea">
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MarkingTheOriginalGaugeLength"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#OriginalCrossSectionArea"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageTotalExtensionAtFracture">
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfMaximumCrossSectionAreaAfterFracture"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageTotalExtensionAtFracture"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageTotalExtensionAtFractureFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity">
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ModulusOfElasticity"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#SlopOfElasticPartOfTheStressStreainCurve"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ModuludOfElasticityFunction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfMaximumForce"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandardIdentifier">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/UpperYieldStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceTotalLength">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestPieceTotalLength"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
+    <cco:affects rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MarkingTheOriginalGaugeLength"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_made_of">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfLocationChange">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/has_quality">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/designated_by">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ModulusOfElasticity">
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfPermanentSetStrength">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfModulusOfElasticity"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ElasticModulus"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#FinalGaugeLengthAfterFracture">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageTotalExtensionAtFracture"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageElongationAfterFracture"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfFinalGaugeLengthAfterFracture"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageTotalExtensionAtFracture">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfPercentageTotalExtensionAtFracture"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/EngineeringStrain"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfCrossheadSeparationRate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfThePercentageYieldPointExtension">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#Tensiletest_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:occurs_on rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestDate"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestDataFile"/>
+    <rdf:type rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTest"/>
+    <mseo:in_accordance_with rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
+    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestingMachine"/>
+    <cco:process_started_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestMeasurement"/>
+    <cco:has_input rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestPiece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfPercentagePlasticExtensionAtMaximumForce">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestTemperature">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestTemperature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Temperature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_input_of">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MaximumForce">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfMaximumForce"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfTensileStrength"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Force"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.02">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp0.02"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfThePercentageYieldPointExtension">
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageYieldPointExtension"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageElongationAfterFracture">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageElongationAfterFractureFunction"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageTotalExtensionAtFracture"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageElongationAfterFracture"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/RawDataSet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ExtensometerGaugeLength">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfExtensionAtMaximumForce"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfThePercentageYieldPointExtension"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CalculateTensileTestUncertainity"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfPercentageTotalExtensionAtFracture"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfExtensometerGaugeLength"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StrainRate">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfStrainRate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Speed"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#VarificationOfPermanentSetStrength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfThePercentageYieldPointExtension"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PermanentSetStrength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#SlopOfElasticPartOfTheStressStreainCurve">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Stiffness"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfExtensionAtMaximumForce"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementofSlopOfElasticPartOfTheStressStreainCurve"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestDisplacement">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Deformation"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfFinalGaugeLengthAfterFracture"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StrainCalculation"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfDisplacementDataSet"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfExtensionAtMaximumForce"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#Producer">
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ProducerName"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Organisation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTensileTestUncertainity">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Regulation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#SettingTheForceZeroPoint">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#Gripping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestingMachine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StressRate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Speed"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasutrementOfStressRate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestSpeed">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Speed"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestSpeed"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfProofStrength_TotalExtension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfLowerYieldStrength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfPercentageTotalExtensionAtFracture">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentagePlasticExtensionAtMaximumForce">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/PlasticStrain"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfPercentagePlasticExtensionAtMaximumForce"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_process_part">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ControlTemperature">
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfOriginalCrossSectionArea"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestTemperature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Force">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestingMachineIdentifier">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/affects">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Speed">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ProducerName">
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPiecePreparatiomMethod">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Deformation">
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPiecePreparation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPiecePreparatiomMethod"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageReductionOfAreaFunction">
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestPieceFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestPieceParallelLength">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#SeparationPoint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Strain"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfSeparationPoint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/UniversalTestingMachine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfMaximumForce">
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MaximumForce"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfTensileStrength"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestDataFile">
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestDateFileLocation"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/File"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#PercentageReductionOfArea">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfPercentageReductionOfArea"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Deformation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CopperAlloy">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceCompositionIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfFractureStrength">
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#FractureStrength"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfFinalGaugeLengthAfterFracture"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfOriginalGaugeLength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ProducerName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StrainFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#EstimatedStrainRateOverTheParallelLength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfEstimatedStrainRateOverTheParallelLength"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Speed"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfMaximumForce">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfUpperYieldStrength">
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfLowerYieldStrength"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#UpperYieldStrength_"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/process_started_by">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTest">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://purl.matolab.org/mseo/mid/Expriment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfSeparationPoint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#LowerYieldStrength_">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/LowerYieldStrength"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfLowerYieldStrength"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestingMachine">
+    <cco:hasFunction rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestingMachineArtifactFunction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestingMachineIdentifier"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/UniversalTestingMachine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Length">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/has_output">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ModulusOfElasticity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfModulusOfElasticity"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ElasticModulus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp5">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#YieldStrength_Rp5"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/YieldStrength"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestStressDataSet">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/AnalysedDataSet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/has_part">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceCrossSectionShape">
+    <cco:affects rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfOriginalCrossSectionArea"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ShapeQuality"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceCrossSectionShapeIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfFinalGaugeLengthAfterFracture">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfProofStrength_PlasticExtension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfUpperYieldStrength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/uses">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ProportionalRatioMeasurementInformationContentEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalExtent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StressFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfFractureStrength">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/EngineeringStrain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_part">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/PlasticStrain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementofSlopOfElasticPartOfTheStressStreainCurve">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/AnalysedDataSet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TransportFromProducer">
+    <cco:starts_at rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#Producer"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfLocationChange"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestingMachineArtifactFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Day">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Specimen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceCoefficientOfProportionality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ProportionalRatioMeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfMaximumCrossSectionAreaAfterFracture">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfEstimatedStrainRateOverTheParallelLength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/in_accordance_with">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#CrossheadSeparationRate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Speed"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfCrossheadSeparationRate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfAppliedLoadingForceDataSet">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/RawDataSet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ProcessHistory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/derives_into">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Stress">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/starts_at">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestUncertainity">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DeviationMeasurementInformationContentEntity"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTensileTestUncertainity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_made_of">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Organisation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/UpperYieldStrength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestPieceCrossSectionShapeIdentifier">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/ElasticModulus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_input">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/UltimateTensileStrength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Strain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/File">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Expriment">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandardIdentifier">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/MechanicalStrength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/occurs_on">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DeviationMeasurementInformationContentEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/ActOfMeasuring">
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/ImageMetadataSet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfPositionChange">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfAnalysing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/BreackingStrength">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_output">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/uses">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/AnalysedDataSet">
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/ActOfMeasuring">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/has_part">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
 </rdf:RDF>

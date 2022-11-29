@@ -52,7 +52,7 @@ kd: a owl:Ontology ;
     dc:creator "Birgit Skrotzki",
         "Hossein Beygi Nasrabadi" ;
     dc:title "Tensile Test Ontology" ;
-    owl:versionInfo "2.0.0" .
+    owl:versionInfo "2.0.2" .
 
 kd:Tensiletest_ a owl:NamedIndividual,
         kd:TensileTest ;
@@ -468,7 +468,8 @@ kd:TestForce a cco:Force,
 kd:TestPieceCoefficientOfProportionality a cco:ProportionalRatioMeasurementInformationContentEntity,
         owl:NamedIndividual .
 
-kd:TestPieceCompositionIdentifier a owl:NamedIndividual .
+kd:TestPieceCompositionIdentifier a cco:NonNameIdentifier,
+        owl:NamedIndividual .
 
 kd:TestPieceCrossSectionShape a cco:ShapeQuality,
         owl:NamedIndividual ;
@@ -704,8 +705,6 @@ mseo:RawDataSet a owl:Class .
 
 cco:DistanceMeasurementInformationContentEntity a owl:Class .
 
-cco:NonNameIdentifier a owl:Class .
-
 kd:DeterminationOfFractureStrength a owl:NamedIndividual,
         mseo:ActOfAnalysing ;
     bfo:derives_into kd:FractureStrength ;
@@ -793,6 +792,8 @@ kd:VarificationOfPermanentSetStrength a owl:NamedIndividual,
     cco:process_precedes kd:DeterminationOfThePercentageYieldPointExtension .
 
 cco:Length a owl:Class .
+
+cco:NonNameIdentifier a owl:Class .
 
 cco:Speed a owl:Class .
 

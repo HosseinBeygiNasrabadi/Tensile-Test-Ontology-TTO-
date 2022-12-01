@@ -40,6 +40,5 @@
   <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandardIdentifier">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
-
   </rdf:Description>
 </rdf:RDF>

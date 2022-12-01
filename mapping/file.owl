@@ -15,13 +15,6 @@
     <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandardIdentifier"/>
     <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Regulation"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#">
-    <dc:creator>Hossein Beygi Nasrabadi</dc:creator>
-    <owl:versionInfo>2.0.2</owl:versionInfo>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <dc:title>Tensile Test Ontology</dc:title>
-    <dc:creator>Birgit Skrotzki</dc:creator>
-  </rdf:Description>
   <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#Tensiletest_">
     <mseo:in_accordance_with rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>

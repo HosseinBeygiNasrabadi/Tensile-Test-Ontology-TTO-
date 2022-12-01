@@ -5,33 +5,21 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+mseo:Expriment a owl:Class .
+kd:TensileTest a owl:Class ;
+    rdfs:subClassOf mseo:Expriment .
+mseo:Regulation a owl:Class .
+cco:NonNameIdentifier a owl:Class .
 cco:designated_by a owl:ObjectProperty .
-
-kd: a owl:Ontology ;
-    dc:creator "Birgit Skrotzki",
-        "Hossein Beygi Nasrabadi" ;
-    dc:title "Tensile Test Ontology" ;
-    owl:versionInfo "2.0.2" .
-
+mseo:in_accordance_with a owl:ObjectProperty .
 kd:Tensiletest_ a owl:NamedIndividual,
         kd:TensileTest ;
     mseo:in_accordance_with kd:TestStandard .
-
-mseo:in_accordance_with a owl:ObjectProperty .
-
-cco:NonNameIdentifier a owl:Class .
-
-kd:TensileTest a owl:Class ;
-    rdfs:subClassOf mseo:Expriment .
-
 kd:TestStandard a owl:NamedIndividual,
         mseo:Regulation ;
     cco:designated_by kd:TestStandardIdentifier .
-
 kd:TestStandardIdentifier a cco:NonNameIdentifier,
         owl:NamedIndividual .
 
-mseo:Expriment a owl:Class .
 
-mseo:Regulation a owl:Class .
 

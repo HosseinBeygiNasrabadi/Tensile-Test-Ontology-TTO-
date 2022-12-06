@@ -6,12 +6,6 @@
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStress">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestStressDataSet"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Stress"/>
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/ImageMetadataSet">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
@@ -27,24 +21,8 @@
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfAnalysing">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestStressDataSet">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/AnalysedDataSet"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/ElasticModulus">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity">
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfMaximumForce"/>
-    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ModuludOfElasticityFunction"/>
-    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ModulusOfElasticity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ModulusOfElasticity">
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfModulusOfElasticity"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ElasticModulus"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Strain">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -52,69 +30,20 @@
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_process_part">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StressStrainCurve">
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ImageMetadataSet"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/ActOfAnalysing">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestStrainDataSet">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/AnalysedDataSet"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/designated_by">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Regulation"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#">
-    <dc:title>Tensile Test Ontology</dc:title>
-    <dc:creator>Hossein Beygi Nasrabadi</dc:creator>
-    <owl:versionInfo>2.0.3</owl:versionInfo>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <dc:creator>Birgit Skrotzki</dc:creator>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfMaximumForce">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Stress">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStrain">
-    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Strain"/>
-    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestStrainDataSet"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfThePercentageYieldPointExtension">
-    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfModulusOfElasticity">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ModuludOfElasticityFunction">
-    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_input_of">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestMeasurementAnalysis">
-    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfAnalysing"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/process_precedes">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -127,5 +56,49 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Regulation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTestMeasurementAnalysis">
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfAnalysing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity">
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfMaximumForce"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ModuludOfElasticityFunction"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ModulusOfElasticity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ModuludOfElasticityFunction">
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStress">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestStressDataSet"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Stress"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStrain">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Strain"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfTestStrainDataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#StressStrainCurve">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#DeterminationOfModulusOfElasticity"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ImageMetadataSet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#ModulusOfElasticity">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfModulusOfElasticity"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ElasticModulus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#MeasurementOfModulusOfElasticity">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
 </rdf:RDF>

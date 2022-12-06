@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-06T17:20:04.574Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="ow2JuSizmM7zsK9Y7fhz" version="20.6.0" type="gitlab" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-12-06T17:23:54.378Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="8scgfq9Uaw9umoYG0Cc1" version="20.6.0" type="gitlab" pages="2">
   <diagram id="nRI1FRYwAx3gcNsNQlUs" name="Tensile V2.0 (without mapping)">
     <mxGraphModel dx="-1127" dy="4178" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -884,7 +884,7 @@
             <mxGeometry x="1160.6" y="1666" width="221" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;font face=&quot;helvetica&quot;&gt;&lt;u&gt;kd:UpperYieldStrength_&lt;/u&gt;&lt;/font&gt;" Type="Individual" id="Fe3lSDXgcM0p536ULmFv-220">
+        <object label="&lt;font face=&quot;helvetica&quot;&gt;&lt;u&gt;kd:UpperYieldStrenght_&lt;/u&gt;&lt;/font&gt;" Type="Individual" id="Fe3lSDXgcM0p536ULmFv-220">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];strokeWidth=1;strokeColor=#000000;" parent="Fe3lSDXgcM0p536ULmFv-202" vertex="1">
             <mxGeometry x="1160.6" y="1696" width="221" height="30" as="geometry" />
           </mxCell>

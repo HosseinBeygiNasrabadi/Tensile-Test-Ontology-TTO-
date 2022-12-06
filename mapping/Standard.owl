@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:cco="http://www.ontologyrepository.com/CommonCoreOntologies/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:mseo="https://purl.matolab.org/mseo/mid/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#">
+    <dc:creator>Hossein Beygi Nasrabadi</dc:creator>
+    <owl:versionInfo>2.0.2</owl:versionInfo>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dc:title>Tensile Test Ontology</dc:title>
+    <dc:creator>Birgit Skrotzki</dc:creator>
+
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Expriment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTest">
+    <rdfs:subClassOf rdf:resource="https://purl.matolab.org/mseo/mid/Expriment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Regulation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/designated_by">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/in_accordance_with">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#Tensiletest_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <mseo:in_accordance_with rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard"/>
+    <rdf:type rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TensileTest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandardIdentifier"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Regulation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/process-graphs/tensile-test#TestStandardIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+  </rdf:Description>
+</rdf:RDF>

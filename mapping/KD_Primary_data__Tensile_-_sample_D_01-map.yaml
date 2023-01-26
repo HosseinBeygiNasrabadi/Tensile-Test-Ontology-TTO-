@@ -1,5 +1,5 @@
 prefixes: {data: 'https://gitlab.com/kupferdigital/process-graphs/tensile-test/-/raw/main/Example%20primary%20data/KD_Primary_data__Tensile_-_sample_D_01-metadata.json/',
-  method: 'https://gitlab.com/kupferdigital/process-graphs/tensile-test/-/raw/main/PmdKdTensile_V2.0.0_.ttl/',
+  method: 'https://gitlab.com/kupferdigital/process-graphs/tensile-test/-/raw/main/PmdKdTensile_V2.0.6.ttl/',
   obo: 'http://purl.obolibrary.org/obo/'}
 base: http://purl.matolab.org/mseo/mappings/
 sources:

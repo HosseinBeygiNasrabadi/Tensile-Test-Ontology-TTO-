@@ -308,7 +308,7 @@ mappings:
       - [str2, Probenform]
     po:
     - ['obo:RO_0010002', 'method:tensile-test#TestPieceCrossSectionShapeIdentifier~iri']
-  tensile-test#TestPieceIdentifier:
+  tensile-test#TestPieceIndenter:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -317,7 +317,7 @@ mappings:
       - [str1, $(label)]
       - [str2, Probenbezeichnung]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#TestPieceIdentifier~iri']
+    - ['obo:RO_0010002', 'method:tensile-test#TestPieceIndenter~iri']
   tensile-test#TestDateIdentifier:
     sources: [data_notes, data_columns]
     s: data:$(@id)

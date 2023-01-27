@@ -8,7 +8,7 @@ sources:
   data_notes: {access: 'https://gitlab.com/kupferdigital/process-graphs/tensile-test/-/raw/main/Example%20primary%20data/KD_Primary_data__Tensile_-_sample_D_01-metadata.json',
     iterator: '$.notes[*]', referenceFormulation: jsonpath}
 mappings:
-  tensile-test#MeasurementOfAppliedLoadingForceDataSet:
+  MeasurementOfAppliedLoadingForceDataSet:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -17,8 +17,8 @@ mappings:
       - [str1, $(titles)]
       - [str2, Kraft]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfAppliedLoadingForceDataSet~iri']
-  tensile-test#MeasurementOfAppliedLoadingTimeDataSet:
+    - ['obo:RO_0010002', 'method:MeasurementOfAppliedLoadingForceDataSet~iri']
+  MeasurementOfAppliedLoadingTimeDataSet:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -27,8 +27,8 @@ mappings:
       - [str1, $(titles)]
       - [str2, Zeit]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfAppliedLoadingTimeDataSet~iri']
-  tensile-test#MeasurementOfDisplacementDataSet:
+    - ['obo:RO_0010002', 'method:MeasurementOfAppliedLoadingTimeDataSet~iri']
+  MeasurementOfDisplacementDataSet:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -37,8 +37,8 @@ mappings:
       - [str1, $(titles)]
       - [str2, Weg]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfDisplacementDataSet~iri']
-  tensile-test#MeasurementOfLowerYieldStrength:
+    - ['obo:RO_0010002', 'method:MeasurementOfDisplacementDataSet~iri']
+  MeasurementOfLowerYieldStrength:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -47,8 +47,8 @@ mappings:
       - [str1, $(label)]
       - [str2, Untere Streckgrenze]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfLowerYieldStrength~iri']
-  tensile-test#MeasurementOfModulusOfElasticity:
+    - ['obo:RO_0010002', 'method:MeasurementOfLowerYieldStrength~iri']
+  MeasurementOfModulusOfElasticity:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -57,8 +57,8 @@ mappings:
       - [str1, $(label)]
       - [str2, E-Modul]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfModulusOfElasticity~iri']
-  tensile-test#MeasurementOfOriginalCrossSectionArea:
+    - ['obo:RO_0010002', 'method:MeasurementOfModulusOfElasticity~iri']
+  MeasurementOfOriginalCrossSectionArea:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -67,8 +67,8 @@ mappings:
       - [str1, $(label)]
       - [str2, Probenquerschnitt]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfOriginalCrossSectionArea~iri']
-  tensile-test#MeasurementOfPercentageElongationAfterFracture:
+    - ['obo:RO_0010002', 'method:MeasurementOfOriginalCrossSectionArea~iri']
+  MeasurementOfPercentageElongationAfterFracture:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -77,8 +77,8 @@ mappings:
       - [str1, $(label)]
       - [str2, Bruchdehnung]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfPercentageElongationAfterFracture~iri']
-  tensile-test#MeasurementOfPercentageReductionOfArea:
+    - ['obo:RO_0010002', 'method:MeasurementOfPercentageElongationAfterFracture~iri']
+  MeasurementOfPercentageReductionOfArea:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -87,8 +87,8 @@ mappings:
       - [str1, $(label)]
       - [str2, "Brucheinschn\xFCrung"]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfPercentageReductionOfArea~iri']
-  tensile-test#MeasurementOfSeparationPoint:
+    - ['obo:RO_0010002', 'method:MeasurementOfPercentageReductionOfArea~iri']
+  MeasurementOfSeparationPoint:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -97,8 +97,8 @@ mappings:
       - [str1, $(label)]
       - [str2, Umschaltpunkt]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfSeparationPoint~iri']
-  tensile-test#MeasurementOfStrainRate:
+    - ['obo:RO_0010002', 'method:MeasurementOfSeparationPoint~iri']
+  MeasurementOfStrainRate:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -107,8 +107,8 @@ mappings:
       - [str1, $(label)]
       - [str2, "Pr\xFCfgeschwindigkeit 1"]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfStrainRate~iri']
-  tensile-test#MeasurementOfTestSpeed:
+    - ['obo:RO_0010002', 'method:MeasurementOfStrainRate~iri']
+  MeasurementOfTestSpeed:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -117,8 +117,8 @@ mappings:
       - [str1, $(label)]
       - [str2, "Pr\xFCfgeschwindigkeit 2"]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfTestSpeed~iri']
-  tensile-test#MeasurementOfTestTemperature:
+    - ['obo:RO_0010002', 'method:MeasurementOfTestSpeed~iri']
+  MeasurementOfTestTemperature:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -127,8 +127,8 @@ mappings:
       - [str1, $(label)]
       - [str2, "Pr\xFCftemperatur"]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfTestTemperature~iri']
-  tensile-test#MeasurementOfThePercentageYieldPointExtension:
+    - ['obo:RO_0010002', 'method:MeasurementOfTestTemperature~iri']
+  MeasurementOfThePercentageYieldPointExtension:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -137,8 +137,8 @@ mappings:
       - [str1, $(label)]
       - [str2, "Gleichma\xDFdehnung"]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfThePercentageYieldPointExtension~iri']
-  tensile-test#MeasurementOfUltimateTensileStrength:
+    - ['obo:RO_0010002', 'method:MeasurementOfThePercentageYieldPointExtension~iri']
+  MeasurementOfUltimateTensileStrength:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -147,8 +147,8 @@ mappings:
       - [str1, $(label)]
       - [str2, Zugfestigkeit]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfUltimateTensileStrength~iri']
-  tensile-test#MeasurementOfUpperYieldStrength:
+    - ['obo:RO_0010002', 'method:MeasurementOfUltimateTensileStrength~iri']
+  MeasurementOfUpperYieldStrength:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -157,8 +157,8 @@ mappings:
       - [str1, $(label)]
       - [str2, Obere Streckgrenze]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfUpperYieldStrength~iri']
-  tensile-test#YieldStrength_Rp0.01:
+    - ['obo:RO_0010002', 'method:MeasurementOfUpperYieldStrength~iri']
+  YieldStrength_Rp0.01:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -167,8 +167,8 @@ mappings:
       - [str1, $(label)]
       - [str2, 'Dehngrenze (Rp0,01)']
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#YieldStrength_Rp0.01~iri']
-  tensile-test#YieldStrength_Rp0.02:
+    - ['obo:RO_0010002', 'method:YieldStrength_Rp0.01~iri']
+  YieldStrength_Rp0.02:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -177,8 +177,8 @@ mappings:
       - [str1, $(label)]
       - [str2, 'Dehngrenze (Rp0,02)']
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#YieldStrength_Rp0.02~iri']
-  tensile-test#YieldStrength_Rp0.05:
+    - ['obo:RO_0010002', 'method:YieldStrength_Rp0.02~iri']
+  YieldStrength_Rp0.05:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -187,8 +187,8 @@ mappings:
       - [str1, $(label)]
       - [str2, 'Dehngrenze (Rp0,05)']
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#YieldStrength_Rp0.05~iri']
-  tensile-test#YieldStrength_Rp0.1:
+    - ['obo:RO_0010002', 'method:YieldStrength_Rp0.05~iri']
+  YieldStrength_Rp0.1:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -197,8 +197,8 @@ mappings:
       - [str1, $(label)]
       - [str2, 'Dehngrenze (Rp0,1)']
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#YieldStrength_Rp0.1~iri']
-  tensile-test#YieldStrength_Rp0.2:
+    - ['obo:RO_0010002', 'method:YieldStrength_Rp0.1~iri']
+  YieldStrength_Rp0.2:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -207,8 +207,8 @@ mappings:
       - [str1, $(label)]
       - [str2, 'Dehngrenze (Rp0,2)']
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#YieldStrength_Rp0.2~iri']
-  tensile-test#YieldStrength_Rp0.5:
+    - ['obo:RO_0010002', 'method:YieldStrength_Rp0.2~iri']
+  YieldStrength_Rp0.5:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -217,8 +217,8 @@ mappings:
       - [str1, $(label)]
       - [str2, 'Dehngrenze (Rp0,5)']
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#YieldStrength_Rp0.5~iri']
-  tensile-test#YieldStrength_Rp1:
+    - ['obo:RO_0010002', 'method:YieldStrength_Rp0.5~iri']
+  YieldStrength_Rp1:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -227,8 +227,8 @@ mappings:
       - [str1, $(label)]
       - [str2, Dehngrenze (Rp1)]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#YieldStrength_Rp1~iri']
-  tensile-test#YieldStrength_Rp2:
+    - ['obo:RO_0010002', 'method:YieldStrength_Rp1~iri']
+  YieldStrength_Rp2:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -237,8 +237,8 @@ mappings:
       - [str1, $(label)]
       - [str2, Dehngrenze (Rp2)]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#YieldStrength_Rp2~iri']
-  tensile-test#YieldStrength_Rp5:
+    - ['obo:RO_0010002', 'method:YieldStrength_Rp2~iri']
+  YieldStrength_Rp5:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -247,8 +247,8 @@ mappings:
       - [str1, $(label)]
       - [str2, Dehngrenze (Rp5)]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#YieldStrength_Rp5~iri']
-  tensile-test#MeasurementOfOriginalGaugeLength:
+    - ['obo:RO_0010002', 'method:YieldStrength_Rp5~iri']
+  MeasurementOfOriginalGaugeLength:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -257,8 +257,8 @@ mappings:
       - [str1, $(label)]
       - [str2, "Anfangsmessl\xE4nge"]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfOriginalGaugeLength~iri']
-  tensile-test#MeasurementOfTestStrainDataSet:
+    - ['obo:RO_0010002', 'method:MeasurementOfOriginalGaugeLength~iri']
+  MeasurementOfTestStrainDataSet:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -267,8 +267,8 @@ mappings:
       - [str1, $(titles)]
       - [str2, Dehnung]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfTestStrainDataSet~iri']
-  tensile-test#MeasurementOfTestStressDataSet:
+    - ['obo:RO_0010002', 'method:MeasurementOfTestStrainDataSet~iri']
+  MeasurementOfTestStressDataSet:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -277,8 +277,8 @@ mappings:
       - [str1, $(titles)]
       - [str2, Spannung]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#MeasurementOfTestStressDataSet~iri']
-  tensile-test#TensileTestingMachineIdentifier:
+    - ['obo:RO_0010002', 'method:MeasurementOfTestStressDataSet~iri']
+  TensileTestingMachineIdentifier:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -287,8 +287,8 @@ mappings:
       - [str1, $(label)]
       - [str2, "Pr\xFCfmaschine"]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#TensileTestingMachineIdentifier~iri']
-  tensile-test#TestPieceCompositionIdentifier:
+    - ['obo:RO_0010002', 'method:TensileTestingMachineIdentifier~iri']
+  TestPieceCompositionIdentifier:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -297,8 +297,8 @@ mappings:
       - [str1, $(label)]
       - [str2, Werkstoff]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#TestPieceCompositionIdentifier~iri']
-  tensile-test#TestPieceCrossSectionShapeIdentifier:
+    - ['obo:RO_0010002', 'method:TestPieceCompositionIdentifier~iri']
+  TestPieceCrossSectionShapeIdentifier:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -307,8 +307,8 @@ mappings:
       - [str1, $(label)]
       - [str2, Probenform]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#TestPieceCrossSectionShapeIdentifier~iri']
-  tensile-test#TestPieceIndenter:
+    - ['obo:RO_0010002', 'method:TestPieceCrossSectionShapeIdentifier~iri']
+  TestPieceIndenter:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -317,8 +317,8 @@ mappings:
       - [str1, $(label)]
       - [str2, Probenbezeichnung]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#TestPieceIndenter~iri']
-  tensile-test#TestDateIdentifier:
+    - ['obo:RO_0010002', 'method:TestPieceIndenter~iri']
+  TestDateIdentifier:
     sources: [data_notes, data_columns]
     s: data:$(@id)
     condition:
@@ -327,4 +327,4 @@ mappings:
       - [str1, $(label)]
       - [str2, Versuchs-Datum]
     po:
-    - ['obo:RO_0010002', 'method:tensile-test#TestDateIdentifier~iri']
+    - ['obo:RO_0010002', 'method:TestDateIdentifier~iri']

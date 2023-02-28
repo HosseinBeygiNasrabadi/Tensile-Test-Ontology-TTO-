@@ -1,0 +1,268 @@
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+@prefix cd: <https://kupferdigital.gitlab.io/ontologies/copper-key#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix iof: <https://purl.industrialontologies.org/ontology/core/Core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qk: <http://qudt.org/2.1/vocab/quantitykind/> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sto: <https://w3id.org/i40/sto#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+qk:AmountOfSubstanceConcentrationOfB a owl:NamedIndividual,
+        cd:FractionKind .
+
+qk:AmountOfSubstanceFractionOfB a owl:NamedIndividual,
+        cd:FractionKind .
+
+qk:AmountOfSubstancePerUnitMass a owl:NamedIndividual,
+        cd:FractionKind .
+
+qk:AmountOfSubstancePerUnitVolume a owl:NamedIndividual,
+        cd:FractionKind .
+
+qk:MassFraction a owl:NamedIndividual,
+        cd:FractionKind .
+
+qk:MoleFraction a owl:NamedIndividual,
+        cd:FractionKind .
+
+qk:VolumeFraction a owl:NamedIndividual,
+        cd:FractionKind .
+
+cd:CentrifugalCast a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty iof:isOutputOf ;
+            owl:someValuesFrom cd:CentrifugalCasting ],
+        cd:Cast .
+
+cd:ChemicalElementFraction a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:int ;
+            owl:onClass cd:FractionKind ;
+            owl:onProperty qudt:hasQuantityKind ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom cd:ChemicalElement ;
+            owl:onProperty cd:ofElement ],
+        [ a owl:Restriction ;
+            owl:onProperty qudt:hasQuantityKind ;
+            owl:someValuesFrom cd:FractionKind ],
+        qudt:Quantity .
+
+cd:ContinuousCast a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty iof:isOutputOf ;
+            owl:someValuesFrom cd:ContinuousCasting ],
+        cd:Cast .
+
+cd:CopperKeyDatasheet a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cd:specifies ;
+            owl:someValuesFrom cd:CopperAlloy ],
+        iof:RequirementSpecification .
+
+cd:Forging a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Ingot a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:PermanentMouldCast a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty iof:isOutputOf ;
+            owl:someValuesFrom cd:PermanentMouldCasting ],
+        cd:Cast .
+
+cd:PressureDieCast a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty iof:isOutputOf ;
+            owl:someValuesFrom cd:PressureDieCasting ],
+        cd:Cast .
+
+cd:Profile a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Rod a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:SandCast a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty iof:isOutputOf ;
+            owl:someValuesFrom cd:SandCasting ],
+        cd:Cast .
+
+cd:Sheet a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Strip a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Tube a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Wire a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:equal a owl:DatatypeProperty ;
+    rdfs:subPropertyOf qudt:value .
+
+cd:greaterThan a owl:DatatypeProperty ;
+    rdfs:subPropertyOf qudt:value .
+
+cd:lessThan a owl:DatatypeProperty ;
+    rdfs:subPropertyOf qudt:value .
+
+cd:materialNumber a owl:DatatypeProperty ;
+    rdfs:subPropertyOf cd:materialDesignation .
+
+cd:materialSymbol a owl:DatatypeProperty ;
+    rdfs:subPropertyOf cd:materialDesignation .
+
+<https://kupferdigital.gitlab.io/ontologies/materials#> a owl:Ontology ;
+    dc:creator "Gordian Dziwis" ;
+    dc:description "An ontology describing the Copper Key." ;
+    dc:title "Copper Key Ontology" ;
+    owl:versionInfo "0.0.1" .
+
+bfo:BFO_0000019 a owl:Class ;
+    owl:equivalentClass cd:Quality .
+
+qudt:Quantity a owl:Class ;
+    rdfs:subClassOf cd:Quality .
+
+qudt:QuantityKind a owl:Class ;
+    rdfs:subClassOf iof:ValueSpecification .
+
+cd:CentrifugalCasting a owl:Class ;
+    rdfs:subClassOf cd:Casting .
+
+cd:ContinuousCasting a owl:Class ;
+    rdfs:subClassOf cd:Casting .
+
+cd:CopperAlloy a owl:Class ;
+    rdfs:subClassOf cd:Alloy .
+
+cd:PermanentMouldCasting a owl:Class ;
+    rdfs:subClassOf cd:Casting .
+
+cd:PressureDieCasting a owl:Class ;
+    rdfs:subClassOf cd:Casting .
+
+cd:SandCasting a owl:Class ;
+    rdfs:subClassOf cd:Casting .
+
+cd:WroughtAlloy a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:equivalentClass cd:WroughtAlloy ;
+            owl:intersectionOf ( cd:WroughtMaterial cd:Alloy ) ] .
+
+cd:WroughtMaterial a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty iof:isOutputOf ;
+            owl:someValuesFrom cd:Wroughting ],
+        iof:MaterialArtifact .
+
+cd:Wroughting a owl:Class ;
+    rdfs:subClassOf iof:ManufacturingProcess .
+
+cd:ofElement a owl:ObjectProperty .
+
+cd:requires a owl:ObjectProperty ;
+    rdfs:subPropertyOf iof:isAbout ;
+    owl:inverseOf cd:requiredBy .
+
+cd:specifiedBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf iof:prescribedBy ;
+    owl:inverseOf cd:specifies .
+
+iof:InformationContentEntity a owl:Class .
+
+iof:isAbout a owl:ObjectProperty .
+
+iof:subjectOf a owl:ObjectProperty .
+
+sto:Standard a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cd:defines ;
+            owl:someValuesFrom owl:Thing ],
+        cd:Specification .
+
+wd:Q11344 a owl:Class ;
+    owl:equivalentClass cd:ChemicalElement .
+
+qudt:hasQuantityKind a owl:ObjectProperty .
+
+rdfs:isDefinedBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf iof:prescribedBy ;
+    owl:inverseOf cd:defines .
+
+owl:Thing a owl:Class .
+
+cd:Alloy a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:ChemicalElement a owl:Class ;
+    rdfs:subClassOf iof:ValueSpecification ;
+    owl:equivalentClass wd:Q11344 .
+
+cd:Quality a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cd:requiredBy ;
+            owl:someValuesFrom iof:RequirementSpecification ] ;
+    owl:equivalentClass bfo:BFO_0000019 .
+
+cd:Specification a owl:Class ;
+    rdfs:subClassOf iof:InformationContentEntity .
+
+cd:defines a owl:ObjectProperty ;
+    rdfs:subPropertyOf iof:prescribes ;
+    owl:inverseOf rdfs:isDefinedBy .
+
+cd:materialDesignation a owl:Class,
+        owl:DatatypeProperty .
+
+cd:requiredBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf iof:subjectOf ;
+    owl:inverseOf cd:requires .
+
+iof:ManufacturingProcess a owl:Class .
+
+iof:RequirementSpecification a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cd:specifies ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty rdfs:isDefinedBy ;
+            owl:someValuesFrom sto:Standard ],
+        cd:Specification .
+
+iof:ValueSpecification a owl:Class .
+
+iof:prescribedBy a owl:ObjectProperty .
+
+iof:prescribes a owl:ObjectProperty .
+
+qudt:value a owl:DatatypeProperty .
+
+cd:specifies a owl:ObjectProperty ;
+    rdfs:subPropertyOf iof:prescribes ;
+    owl:inverseOf cd:specifiedBy .
+
+cd:Cast a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty iof:isOutputOf ;
+            owl:someValuesFrom cd:Casting ],
+        iof:MaterialArtifact .
+
+cd:Casting a owl:Class ;
+    rdfs:subClassOf iof:ManufacturingProcess .
+
+iof:isOutputOf a owl:ObjectProperty .
+
+cd:FractionKind a owl:Class ;
+    rdfs:subClassOf qudt:QuantityKind .
+
+iof:MaterialArtifact a owl:Class .
+

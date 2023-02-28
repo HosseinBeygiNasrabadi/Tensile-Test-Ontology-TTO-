@@ -1,0 +1,521 @@
+@prefix bfo: <http://purl.obolibrary.org/obo/bfo.owl#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix kd: <https://kupferdigital.gitlab.io/ontologies/alloy-development/#> .
+@prefix mseo: <https://purl.matolab.org/mseo/mid/> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+bfo:FiatObjectPart a ns1:Class ;
+    rdfs:subClassOf bfo:MaterialEntity .
+
+bfo:History a ns1:Class ;
+    rdfs:subClassOf bfo:Process .
+
+bfo:Object a ns1:Class ;
+    rdfs:subClassOf bfo:MaterialEntity .
+
+bfo:ObjectAggregate a ns1:Class ;
+    rdfs:subClassOf bfo:MaterialEntity .
+
+bfo:RelationalQuality a ns1:Class ;
+    rdfs:subClassOf bfo:Quality .
+
+bfo:Role a ns1:Class ;
+    rdfs:subClassOf bfo:RealizableEntity .
+
+bfo:TemporalInstant a ns1:Class ;
+    rdfs:subClassOf bfo:Zero-DimensionalTemporalRegion .
+
+bfo:TemporalInterval a ns1:Class ;
+    rdfs:subClassOf bfo:One-DimensionalTemporalRegion .
+
+cco:ArtifactFunction a ns1:Class ;
+    rdfs:subClassOf bfo:Function .
+
+cco:Closure a ns1:Class ;
+    rdfs:subClassOf bfo:Quality .
+
+cco:DesignativeName a ns1:Class ;
+    rdfs:subClassOf cco:DesignativeInformationContentEntity .
+
+cco:NonNameIdentifier a ns1:Class ;
+    rdfs:subClassOf cco:DesignativeInformationContentEntity .
+
+cco:designatedBy a ns1:ObjectProperty ;
+    rdfs:range cco:DesignativeInformationContentEntity .
+
+cco:has_input a ns1:ObjectProperty .
+
+cco:has_ouput a ns1:ObjectProperty .
+
+cco:has_output a ns1:ObjectProperty .
+
+cco:is_input_of a ns1:ObjectProperty .
+
+cco:process_precedes a ns1:ObjectProperty .
+
+kd:ContinuousCasting0 a ns1:NamedIndividual,
+        kd:ContinuousCasting ;
+    cco:has_ouput kd:Specimen0 ;
+    cco:process_precedes kd:Cutting0 .
+
+kd:EBSD0 a ns1:NamedIndividual,
+        kd:ElectronBackScatterDiffraction .
+
+kd:EDXMeasurement1 a ns1:NamedIndividual,
+        kd:EnergyDispersiveXRayMicroAnalysis ;
+    cco:has_input kd:Microsection2,
+        kd:Microsection3 ;
+    cco:has_output kd:chemical-composition-x-y-z0,
+        kd:chemical-composition-x-y-z1 .
+
+kd:EDXMeasurement2 a ns1:NamedIndividual,
+        kd:EnergyDispersiveXRayMicroAnalysis ;
+    cco:has_output kd:chemical-composition-x-y-z2 .
+
+kd:EDXMeasurement3 a ns1:NamedIndividual,
+        kd:EnergyDispersiveXRayMicroAnalysis ;
+    cco:has_input kd:Microsection5 ;
+    cco:has_output kd:chemical-composition-x-y-z3 .
+
+kd:GDOESMeasurement0 a ns1:NamedIndividual,
+        kd:GDOES ;
+    cco:has_input kd:Specimen0 ;
+    cco:has_output kd:Composition0 .
+
+kd:GrainSize a ns1:Class ;
+    rdfs:subClassOf kd:MicrostructureQuality .
+
+kd:Legierungsprobe a ns1:Class .
+
+kd:LightOpticalMicroscopy0 a ns1:NamedIndividual,
+        kd:LightOpticalMicroscopy ;
+    cco:has_input kd:Microsection0 .
+
+kd:LightOpticalMicroscopy1 a ns1:NamedIndividual,
+        kd:LightOpticalMicroscopy ;
+    cco:has_input kd:Microsection1 .
+
+kd:LightOpticalMicroscopy2 a ns1:NamedIndividual,
+        kd:LightOpticalMicroscopy .
+
+kd:LightOpticalMicroscopy3 a ns1:NamedIndividual,
+        kd:LightOpticalMicroscopy ;
+    cco:has_input kd:Microsection5 .
+
+kd:PhaseCount a ns1:Class ;
+    rdfs:subClassOf kd:MicrostructureQuality .
+
+kd:ScanningElectronMicroscopy2 a ns1:NamedIndividual,
+        kd:ScanningElectronMicroscopy .
+
+kd:TEM0 a ns1:NamedIndividual,
+        kd:TransmissionElectronMicroscopy .
+
+kd:VickersHardnessTest0 a ns1:NamedIndividual,
+        kd:VickersTest ;
+    cco:has_input kd:Microsection2 .
+
+kd:VickersHardnessTest2 a ns1:NamedIndividual,
+        kd:VickersTest .
+
+mseo: a ns1:Ontology .
+
+mseo:MaterialComposition a ns1:Class ;
+    rdfs:subClassOf bfo:Quality .
+
+bfo:Disposition a ns1:Class ;
+    rdfs:subClassOf bfo:RealizableEntity .
+
+bfo:Function a ns1:Class ;
+    rdfs:subClassOf bfo:Disposition .
+
+cco:Act a ns1:Class ;
+    rdfs:subClassOf bfo:Process .
+
+cco:ActOfArtifactProcessing a ns1:Class ;
+    rdfs:subClassOf cco:IntentionalAct .
+
+cco:InformationContentEntity a ns1:Class ;
+    rdfs:subClassOf bfo:GenericallyDependentContinuant .
+
+cco:MechanicalProcess a ns1:Class ;
+    rdfs:subClassOf bfo:Process .
+
+kd:CastingProcedure a ns1:Class ;
+    rdfs:subClassOf kd:PrimaryShaping .
+
+kd:ChemicalComposition a ns1:Class ;
+    rdfs:subClassOf bfo:Quality .
+
+kd:Composition0 a ns1:NamedIndividual,
+        kd:ChemicalComposition .
+
+kd:ContinuousCasting a ns1:Class ;
+    rdfs:subClassOf kd:CastingProcedure .
+
+kd:Cutting0 a ns1:NamedIndividual,
+        kd:Cutting ;
+    cco:has_input kd:Specimen0 ;
+    cco:has_ouput kd:Specimen0 ;
+    cco:has_output kd:MicrosectionSpecimen0 ;
+    cco:process_precedes kd:HomogenizationAnnealing0 .
+
+kd:Cutting1 a ns1:NamedIndividual,
+        kd:Cutting ;
+    cco:has_input kd:Specimen0 ;
+    cco:has_output kd:MicrosectionSpecimen1,
+        kd:Specimen0 ;
+    cco:process_precedes kd:DiffusionWelding0 .
+
+kd:Cutting2 a ns1:NamedIndividual,
+        kd:Cutting ;
+    cco:has_input kd:Specimen1 ;
+    cco:has_output kd:MicrosectionSpecimen2,
+        kd:Specimen0 ;
+    cco:process_precedes kd:DiffusionAnnealing0 .
+
+kd:Cutting3 a ns1:NamedIndividual,
+        kd:Cutting ;
+    cco:has_input kd:Specimen0 ;
+    cco:has_output kd:MicrosectionSpecimen3,
+        kd:Specimen1,
+        kd:Specimen2 ;
+    cco:process_precedes kd:PrecipitationAnnealing0,
+        kd:PrecipitationAnnealing1 .
+
+kd:Cutting4 a ns1:NamedIndividual,
+        kd:Cutting ;
+    cco:has_input kd:Specimen3 ;
+    cco:has_output kd:MicrosectionSpecimen4 .
+
+kd:Cutting5 a ns1:NamedIndividual,
+        kd:Cutting ;
+    cco:has_input kd:Specimen4 ;
+    cco:has_output kd:MicrosectionSpecimen5 .
+
+kd:DiffusionAnnealing a ns1:Class ;
+    rdfs:subClassOf cco:ActOfArtifactModification .
+
+kd:DiffusionAnnealing0 a ns1:NamedIndividual,
+        kd:DiffusionAnnealing ;
+    cco:has_input kd:Specimen0 ;
+    cco:has_output kd:Specimen0 ;
+    cco:process_precedes kd:Cutting3 .
+
+kd:DiffusionWelding a ns1:Class ;
+    rdfs:subClassOf kd:JoiningByWelding .
+
+kd:DiffusionWelding0 a ns1:NamedIndividual,
+        kd:DiffusionWelding ;
+    cco:has_input kd:Specimen0 ;
+    cco:has_output kd:Specimen1 ;
+    cco:process_precedes kd:Cutting2 .
+
+kd:EBSD1 a ns1:NamedIndividual,
+        kd:ElectronBackScatterDiffraction .
+
+kd:GDOES a ns1:Class ;
+    rdfs:subClassOf cco:ActOfAnalysing .
+
+kd:HardnessTest a ns1:Class ;
+    rdfs:subClassOf cco:ActOfAnalysing .
+
+kd:HomogenizationAnnealing a ns1:Class ;
+    rdfs:subClassOf cco:ActOfArtifactModification .
+
+kd:HomogenizationAnnealing0 a ns1:NamedIndividual,
+        kd:HomogenizationAnnealing ;
+    cco:has_input kd:Specimen0 ;
+    cco:has_output kd:Specimen0 ;
+    cco:process_precedes kd:Cutting1 .
+
+kd:Joining a ns1:Class ;
+    rdfs:subClassOf kd:Manufacturing .
+
+kd:JoiningByWelding a ns1:Class ;
+    rdfs:subClassOf kd:Joining .
+
+kd:LengthMeasurement0 a cco:ActOfMeasuring,
+        ns1:NamedIndividual .
+
+kd:LengthMeasurement1 a cco:ActOfMeasuring,
+        ns1:NamedIndividual .
+
+kd:Microsection0 a ns1:NamedIndividual,
+        kd:Microsection ;
+    cco:has_input kd:MicrosectionSpecimen0 .
+
+kd:Microsection1 a ns1:NamedIndividual,
+        kd:Microsection ;
+    cco:has_input kd:MicrosectionSpecimen1 .
+
+kd:Microsection3 a ns1:NamedIndividual,
+        kd:Microsection ;
+    cco:has_input kd:MicrosectionSpecimen3 ;
+    cco:is_input_of kd:VickersHardnessTest1 .
+
+kd:MicrosectionSpecimen4 a obo:MaterialEntity,
+        ns1:NamedIndividual .
+
+kd:PrecipitationAnnealing0 a ns1:NamedIndividual,
+        kd:PrecipitationAnnealing ;
+    cco:has_input kd:Specimen1 ;
+    cco:has_output kd:Specimen3 ;
+    cco:process_precedes kd:Cutting4 .
+
+kd:PrecipitationAnnealing1 a ns1:NamedIndividual,
+        kd:PrecipitationAnnealing ;
+    cco:has_input kd:Specimen2 ;
+    cco:has_output kd:Specimen4 ;
+    cco:process_precedes kd:Cutting5 .
+
+kd:PrimaryShaping a ns1:Class ;
+    rdfs:subClassOf kd:Manufacturing .
+
+kd:ScanningElectronMicroscopy a ns1:Class .
+
+kd:TEM1 a ns1:NamedIndividual,
+        kd:TransmissionElectronMicroscopy .
+
+kd:VickersHardnessTest1 a ns1:NamedIndividual,
+        kd:VickersTest .
+
+kd:chemical-composition-x-y-z0 a ns1:NamedIndividual,
+        kd:chemicalcompositionxyz .
+
+kd:chemical-composition-x-y-z1 a ns1:NamedIndividual,
+        kd:chemicalcompositionxyz .
+
+kd:chemical-composition-x-y-z2 a ns1:NamedIndividual,
+        kd:chemicalcompositionxyz .
+
+kd:chemical-composition-x-y-z3 a ns1:NamedIndividual,
+        kd:chemicalcompositionxyz .
+
+kd:vickers-hardness-test3 a ns1:NamedIndividual,
+        kd:VickersTest .
+
+bfo:Entity a ns1:Class .
+
+bfo:FiatLine a ns1:Class ;
+    rdfs:subClassOf bfo:ContinuantFiatBoundary ;
+    ns1:disjointWith bfo:FiatPoint,
+        bfo:FiatSurface .
+
+bfo:FiatPoint a ns1:Class ;
+    rdfs:subClassOf bfo:ContinuantFiatBoundary ;
+    ns1:disjointWith bfo:FiatLine,
+        bfo:FiatSurface .
+
+bfo:FiatSurface a ns1:Class ;
+    rdfs:subClassOf bfo:ContinuantFiatBoundary ;
+    ns1:disjointWith bfo:FiatLine,
+        bfo:FiatPoint .
+
+bfo:One-DimensionalTemporalRegion a ns1:Class ;
+    rdfs:subClassOf bfo:TemporalRegion ;
+    ns1:disjointWith bfo:Zero-DimensionalTemporalRegion .
+
+bfo:RealizableEntity a ns1:Class ;
+    rdfs:subClassOf bfo:SpecificallyDependentContinuant .
+
+bfo:Site a ns1:Class ;
+    rdfs:subClassOf bfo:ImmaterialEntity ;
+    ns1:disjointWith bfo:ContinuantFiatBoundary,
+        bfo:SpatialRegion .
+
+bfo:Zero-DimensionalTemporalRegion a ns1:Class ;
+    rdfs:subClassOf bfo:TemporalRegion ;
+    ns1:disjointWith bfo:One-DimensionalTemporalRegion .
+
+cco:ActOfMeasuring a ns1:Class ;
+    rdfs:subClassOf cco:IntentionalAct .
+
+kd:ElectronBackScatterDiffraction a ns1:Class ;
+    rdfs:subClassOf cco:ActOfAnalysing .
+
+kd:Manufacturing a ns1:Class ;
+    rdfs:subClassOf cco:IntentionalAct .
+
+kd:Microscopy a ns1:Class ;
+    rdfs:subClassOf cco:ActOfAnalysing .
+
+kd:Microsection2 a ns1:NamedIndividual,
+        kd:Microsection ;
+    cco:has_input kd:MicrosectionSpecimen2 .
+
+kd:Microsection5 a ns1:NamedIndividual,
+        kd:Microsection ;
+    cco:has_input kd:MicrosectionSpecimen5 ;
+    cco:is_input_of kd:EBSD1,
+        kd:TEM1,
+        kd:vickers-hardness-test3 .
+
+kd:MicrosectionSpecimen0 a obo:MaterialEntity,
+        ns1:NamedIndividual .
+
+kd:MicrosectionSpecimen1 a obo:MaterialEntity,
+        ns1:NamedIndividual .
+
+kd:MicrosectionSpecimen2 a obo:MaterialEntity,
+        ns1:NamedIndividual .
+
+kd:MicrosectionSpecimen3 a obo:MaterialEntity,
+        ns1:NamedIndividual .
+
+kd:MicrosectionSpecimen5 a obo:MaterialEntity,
+        ns1:NamedIndividual .
+
+kd:MicrostructureQuality a ns1:Class ;
+    rdfs:subClassOf bfo:Quality .
+
+kd:PrecipitationAnnealing a ns1:Class ;
+    rdfs:subClassOf cco:ActOfArtifactModification .
+
+kd:Specimen2 a obo:MaterialEntity,
+        ns1:NamedIndividual .
+
+kd:Specimen3 a obo:MaterialEntity,
+        ns1:NamedIndividual .
+
+kd:Specimen4 a obo:MaterialEntity,
+        ns1:NamedIndividual .
+
+kd:TransmissionElectronMicroscopy a ns1:Class ;
+    rdfs:subClassOf kd:Microscopy .
+
+bfo:GenericallyDependentContinuant a ns1:Class ;
+    rdfs:subClassOf bfo:Continuant ;
+    ns1:disjointWith bfo:IndependentContinuant,
+        bfo:SpecificallyDependentContinuant .
+
+bfo:OneDimensionalSpatialRegion a ns1:Class ;
+    rdfs:subClassOf bfo:SpatialRegion ;
+    ns1:disjointWith bfo:ThreeDimensionalSpatialRegion,
+        bfo:TwoDimensionalSpatialRegion,
+        bfo:ZeroDimensionalSpatialRegion .
+
+bfo:ProcessBoundary a ns1:Class ;
+    rdfs:subClassOf bfo:Occurrent ;
+    ns1:disjointWith bfo:Process,
+        bfo:SpatioTemporalRegion,
+        bfo:TemporalRegion .
+
+bfo:SpatioTemporalRegion a ns1:Class ;
+    rdfs:subClassOf bfo:Occurrent ;
+    ns1:disjointWith bfo:Process,
+        bfo:ProcessBoundary,
+        bfo:TemporalRegion .
+
+bfo:ThreeDimensionalSpatialRegion a ns1:Class ;
+    rdfs:subClassOf bfo:SpatialRegion ;
+    ns1:disjointWith bfo:OneDimensionalSpatialRegion,
+        bfo:TwoDimensionalSpatialRegion,
+        bfo:ZeroDimensionalSpatialRegion .
+
+bfo:TwoDimensionalSpatialRegion a ns1:Class ;
+    rdfs:subClassOf bfo:SpatialRegion ;
+    ns1:disjointWith bfo:OneDimensionalSpatialRegion,
+        bfo:ThreeDimensionalSpatialRegion,
+        bfo:ZeroDimensionalSpatialRegion .
+
+bfo:ZeroDimensionalSpatialRegion a ns1:Class ;
+    rdfs:subClassOf bfo:SpatialRegion ;
+    ns1:disjointWith bfo:OneDimensionalSpatialRegion,
+        bfo:ThreeDimensionalSpatialRegion,
+        bfo:TwoDimensionalSpatialRegion .
+
+cco:ActOfArtifactModification a ns1:Class ;
+    rdfs:subClassOf cco:ActOfArtifactProcessing .
+
+cco:DesignativeInformationContentEntity a ns1:Class ;
+    rdfs:subClassOf cco:InformationContentEntity .
+
+kd:EnergyDispersiveXRayMicroAnalysis a ns1:Class ;
+    rdfs:subClassOf cco:ActOfAnalysing .
+
+bfo:Continuant a ns1:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    ns1:disjointWith bfo:Occurrent .
+
+bfo:ImmaterialEntity a ns1:Class ;
+    rdfs:subClassOf bfo:IndependentContinuant ;
+    ns1:disjointWith bfo:MaterialEntity .
+
+bfo:IndependentContinuant a ns1:Class ;
+    rdfs:subClassOf bfo:Continuant ;
+    ns1:disjointWith bfo:GenericallyDependentContinuant,
+        bfo:SpecificallyDependentContinuant .
+
+bfo:MaterialEntity a ns1:Class ;
+    rdfs:subClassOf bfo:IndependentContinuant ;
+    ns1:disjointWith bfo:ImmaterialEntity .
+
+bfo:SpecificallyDependentContinuant a ns1:Class ;
+    rdfs:subClassOf bfo:Continuant ;
+    ns1:disjointWith bfo:GenericallyDependentContinuant,
+        bfo:IndependentContinuant .
+
+cco:IntentionalAct a ns1:Class ;
+    rdfs:subClassOf cco:Act .
+
+kd:LightOpticalMicroscopy a ns1:Class ;
+    rdfs:subClassOf kd:Microscopy .
+
+kd:Specimen1 a obo:MaterialEntity,
+        ns1:NamedIndividual ;
+    cco:is_input_of kd:LengthMeasurement1 .
+
+kd:VickersTest a ns1:Class ;
+    rdfs:subClassOf kd:HardnessTest .
+
+kd:chemicalcompositionxyz a ns1:Class ;
+    rdfs:subClassOf bfo:Quality .
+
+bfo:ContinuantFiatBoundary a ns1:Class ;
+    rdfs:subClassOf bfo:ImmaterialEntity ;
+    ns1:disjointWith bfo:Site,
+        bfo:SpatialRegion .
+
+bfo:Occurrent a ns1:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    ns1:disjointWith bfo:Continuant .
+
+bfo:TemporalRegion a ns1:Class ;
+    rdfs:subClassOf bfo:Occurrent ;
+    ns1:disjointWith bfo:Process,
+        bfo:ProcessBoundary,
+        bfo:SpatioTemporalRegion .
+
+kd:Microsection a ns1:Class ;
+    rdfs:subClassOf obo:MaterialEntity,
+        cco:ActOfAnalysing .
+
+bfo:Process a ns1:Class ;
+    rdfs:subClassOf bfo:Occurrent ;
+    ns1:disjointWith bfo:ProcessBoundary,
+        bfo:SpatioTemporalRegion,
+        bfo:TemporalRegion .
+
+bfo:Quality a ns1:Class ;
+    rdfs:subClassOf bfo:SpecificallyDependentContinuant .
+
+bfo:SpatialRegion a ns1:Class ;
+    rdfs:subClassOf bfo:ImmaterialEntity ;
+    ns1:disjointWith bfo:ContinuantFiatBoundary,
+        bfo:Site .
+
+cco:ActOfAnalysing a ns1:Class ;
+    rdfs:subClassOf cco:IntentionalAct .
+
+kd:Cutting a ns1:Class ;
+    rdfs:subClassOf cco:MechanicalProcess .
+
+obo:MaterialEntity a ns1:Class .
+
+kd:Specimen0 a obo:MaterialEntity,
+        ns1:NamedIndividual ;
+    cco:is_input_of kd:LengthMeasurement0 .
+

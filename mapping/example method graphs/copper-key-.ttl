@@ -1,0 +1,107 @@
+@prefix cd: <https://kupferdigital.gitlab.io/ontologies/copper-key#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix iof: <https://purl.industrialontologies.org/ontology/core/Core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sto: <https://w3id.org/i40/sto#> .
+
+rdfs:isDefinedBy a owl:ObjectProperty .
+
+cd:CentrifugalCast a owl:Class ;
+    rdfs:subClassOf cd:Cast .
+
+cd:ChemicalElement a owl:Class .
+
+cd:ChemicalElementFraction a owl:Class ;
+    rdfs:subClassOf qudt:Quantity .
+
+cd:ContinuousCast a owl:Class ;
+    rdfs:subClassOf cd:Cast .
+
+cd:CopperAlloy a owl:Class ;
+    rdfs:subClassOf cd:Alloy .
+
+cd:CopperKeyDatasheet a owl:Class ;
+    rdfs:subClassOf iof:RequirementSpecification .
+
+cd:Forging a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Ingot a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:PermanentMouldCast a owl:Class ;
+    rdfs:subClassOf cd:Cast .
+
+cd:PressureDieCast a owl:Class ;
+    rdfs:subClassOf cd:Cast .
+
+cd:Profile a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Rod a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:SandCast a owl:Class ;
+    rdfs:subClassOf cd:Cast .
+
+cd:Sheet a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Strip a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Tube a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Wire a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:materialNumber a owl:DatatypeProperty ;
+    rdfs:subPropertyOf cd:materialDesignation .
+
+cd:materialSymbol a owl:DatatypeProperty ;
+    rdfs:subPropertyOf cd:materialDesignation .
+
+cd:ofElement a owl:ObjectProperty .
+
+cd:requires a owl:ObjectProperty .
+
+cd:specifiedBy a owl:ObjectProperty .
+
+<https://kupferdigital.gitlab.io/ontologies/materials#> a owl:Ontology ;
+    dc:creator "Gordian Dziwis" ;
+    dc:description "An ontology describing the Copper Key." ;
+    dc:title "Copper Key Ontology" ;
+    owl:versionInfo "0.0.1" .
+
+sto:Standard a owl:Class ;
+    rdfs:subClassOf cd:Specification .
+
+qudt:Quantity a owl:Class .
+
+cd:WroughtAlloy a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:equivalentClass cd:WroughtAlloy ;
+            owl:intersectionOf ( cd:WroughtMaterial cd:Alloy ) ] .
+
+cd:WroughtMaterial a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+iof:RequirementSpecification a owl:Class ;
+    rdfs:subClassOf cd:Specification .
+
+cd:Alloy a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Specification a owl:Class .
+
+cd:materialDesignation a owl:DatatypeProperty .
+
+cd:Cast a owl:Class ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+iof:MaterialArtifact a owl:Class .
+

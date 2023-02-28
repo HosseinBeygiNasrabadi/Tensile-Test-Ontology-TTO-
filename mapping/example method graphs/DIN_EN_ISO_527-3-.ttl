@@ -1,0 +1,303 @@
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix mseo: <https://purl.matolab.org/mseo/mid/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tt: <https://purl.matolab.org/mseo/methods/DIN_EN_ISO_527-3/> .
+
+obo:BFO_0000051 a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+obo:RO_0000086 a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+obo:RO_0010001 a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:affects a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:designated_by a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_URI_value a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+cco:has_accessory a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_agent a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_function a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:domain mseo:MeasurementDevice ;
+    rdfs:range cco:DistanceMeasurementArtifactFunction,
+        mseo:ForceMeasurementArtifactFunction .
+
+cco:has_output a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_process_part a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_text_value a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+cco:interval_finished_by a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:is_cause_of a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:is_input_of a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:is_measured_by a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:occures_on a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:prescribed_by a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:process_preceeds a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+tt:DecreaseOfThickness a cco:DecreaseOfQuality,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:DecreaseOfWidth a cco:DecreaseOfQuality,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:ExperimentDate a cco:Day,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:designated_by tt:ExperimentDateIdentifier .
+
+tt:IncreaseOfLenght a cco:IncreaseOfQuality,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:MeasurementRegion a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:MeasurementRegion ;
+    obo:BFO_0000051 tt:CrossSection ;
+    obo:RO_0000086 tt:SpecimenLenght,
+        tt:SpecimenShape .
+
+tt:Operator a cco:Agent,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:designated_by tt:OperatorName .
+
+tt:RawDataFile a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:File .
+
+tt:Specimen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:Specimen ;
+    cco:designated_by tt:SpecimenName .
+
+tt:SpecimenBreak a obo:BFO_0000015,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:SpecimenFunctionLoss a cco:LossOfFunction,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:SpecimenShapeLoss a cco:LossOfQuality,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:Standard a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:Regulation ;
+    obo:RO_0010001 tt:DIN_EN_ISO_527-3 ;
+    cco:designated_by tt:StandardIdentifier .
+
+tt:TensileTest a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:Experiment ;
+    cco:has_process_part tt:ActOfElongation,
+        tt:AlignSpecimen,
+        tt:ClampSpecimen,
+        tt:GetCharacteristicValues,
+        tt:MeasureLenght,
+        tt:MeasureThickness,
+        tt:MeasureWidth .
+
+tt:TensileTestSpecimen a cco:ArtifactFunction,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:TestMachineIdentifer a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:TestPlan a cco:PlanSpecification,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:designated_by tt:TestPlanName .
+
+tt:TimeOfBreak a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:TimeOfBreak .
+
+tt:WidthMeasurementInformation a cco:DistanceMeasurementInformationContentEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+mseo: a <http://www.w3.org/2002/07/owl#Ontology> .
+
+mseo:in_accordance_with a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+obo:BFO_0000015 a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:ActOfArtifactAssembly a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:ActOfPositionChange a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Agent a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:ArtifactFunction a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:CalendarDateIdentifier a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Cuboidal a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Day a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:DesignativeName a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:DistanceMeasurementArtifactFunction a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Document a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:IncreaseOfQuality a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:InformationLine a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Lenght a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:LossOfFunction a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:LossOfQuality a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:PlanSpecification a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:RatioMeasurementInformationContentEntity a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Thickness a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Width a <http://www.w3.org/2002/07/owl#Class> .
+
+tt:ActOfElongation a cco:ActOfMeasuring,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_accessory tt:TestMachine ;
+    cco:has_output tt:ForceMeasurementInformation,
+        tt:LenghtMeasurementInformation ;
+    cco:occures_on tt:TestTimeInterval .
+
+tt:AlignSpecimen a cco:ActOfPositionChange,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_accessory tt:TestMachine .
+
+tt:Caliper a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:MeasurementDevice ;
+    cco:designated_by tt:CaliperIdentifer .
+
+tt:CaliperIdentifer a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:ClampSpecimen a cco:ActOfArtifactAssembly,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:CrossSection a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:CrossSection ;
+    obo:RO_0000086 tt:SpecimenThickness,
+        tt:SpecimenWidth .
+
+tt:DIN_EN_ISO_527-3 a cco:Document,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:ExperimentDateIdentifier a cco:CalendarDateIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:ForceMeasurementInformation a cco:RatioMeasurementInformationContentEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:GetCharacteristicValues a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:ActOfAnalysing .
+
+tt:LenghtMeasurementDevice a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:MeasurementDevice ;
+    cco:designated_by tt:LenghtMeasurementDeviceIdentifer .
+
+tt:LenghtMeasurementDeviceIdentifer a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:LenghtMeasurementInformation a cco:DistanceMeasurementInformationContentEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:LoadCell a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:MeasurementDevice ;
+    cco:designated_by tt:LoadCellIdentifer .
+
+tt:LoadCellIdentifer a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:MeasureLenght a cco:ActOfMeasuring,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_accessory tt:TestMachine ;
+    cco:has_output tt:StartLenghtMeasurementInformation .
+
+tt:MeasureThickness a cco:ActOfMeasuring,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_output tt:ThicknessMeasurementInformation .
+
+tt:MeasureWidth a cco:ActOfMeasuring,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_accessory tt:Caliper .
+
+tt:OperatorName a cco:DesignativeName,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:SpecimenLenght a cco:Lenght,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:SpecimenName a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:SpecimenShape a cco:Cuboidal,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:SpecimenThickness a cco:Thickness,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:SpecimenWidth a cco:Width,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:StandardCode a cco:InformationLine,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:StandardIdentifier a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    obo:RO_0010001 tt:StandardCode .
+
+tt:StartLenghtMeasurementInformation a cco:DistanceMeasurementInformationContentEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:TestPlanName a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:TestTimeInterval a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:ExperimentTime .
+
+tt:ThicknessMeasurementInformation a cco:DistanceMeasurementInformationContentEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+mseo:ActOfAnalysing a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:CrossSection a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:Experiment a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:ExperimentTime a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:File a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:ForceMeasurementArtifactFunction a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:MeasurementRegion a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:Regulation a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:Specimen a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:TimeOfBreak a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:UniversalTestingMachine a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:DecreaseOfQuality a <http://www.w3.org/2002/07/owl#Class> .
+
+tt:TestMachine a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:UniversalTestingMachine ;
+    obo:BFO_0000051 tt:LenghtMeasurementDevice,
+        tt:LoadCell .
+
+cco:ActOfMeasuring a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:DistanceMeasurementInformationContentEntity a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:MeasurementDevice a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:NonNameIdentifier a <http://www.w3.org/2002/07/owl#Class> .
+

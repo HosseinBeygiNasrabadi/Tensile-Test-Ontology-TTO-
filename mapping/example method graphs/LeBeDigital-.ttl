@@ -1,0 +1,402 @@
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix con: <http://w3id.org/concrete#> .
+@prefix mseo: <https://purl.matolab.org/mseo/mid/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tt: <http://w3id.org/concrete/youngs#> .
+@prefix xsd1: <http://www.w3.org/2001/XMLSchema> .
+
+obo:BFO_0000051 a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+obo:RO_0000086 a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+obo:RO_0010001 a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+tt: a <http://www.w3.org/2002/07/owl#Ontology> .
+
+tt:ConcreteSpecimen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:Specimen ;
+    obo:RO_0000086 tt:Cylinder,
+        tt:SpecimenDiameter,
+        tt:SpecimenLenght,
+        tt:SpecimenMass,
+        tt:YoungsModulus ;
+    cco:designated_by tt:SpecimenID ;
+    cco:has_function tt:YoungsModulusTestSpecimen ;
+    cco:is_input_of tt:YoungsModulusTest .
+
+tt:ThirdLoadingCycle a obo:BFO_0000015,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:occures_on tt:EndTime .
+
+cco:designated_by a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_URI_value a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+cco:has_accessory a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_agent a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_datetime_value a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+cco:has_decimal_value a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+cco:has_function a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:domain con:Transducer,
+        mseo:MeasurementDevice ;
+    rdfs:range cco:DistanceMeasurementArtifactFunction,
+        mseo:ForceMeasurementArtifactFunction .
+
+cco:has_input a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_output a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_process_part a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_text_value a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+cco:interval_finished_by a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:is_input_of a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:is_measured_by a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:occures_on a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:occurs_at a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:process_preceeds a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:uses_measurement_unit a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+xsd1:String a rdfs:Datatype .
+
+xsd1:anyURI a rdfs:Datatype .
+
+xsd1:dateTime a rdfs:Datatype .
+
+xsd1:decimal a rdfs:Datatype .
+
+xsd1:string a rdfs:Datatype .
+
+mseo:in_accordance_with a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+con:DeterminationOfSecantModulusOfElasticity a <http://www.w3.org/2002/07/owl#Class> .
+
+con:ForceRate a <http://www.w3.org/2002/07/owl#Class> .
+
+con:GigaPascalMeasurementUnit a con:MeasurementUnitOfYoungsModulus,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+con:KiloNewtonPerSecondMeasurementUnit a con:MeasurementUnitOfForceRate,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+con:MeasurementUnitOfForceRate a <http://www.w3.org/2002/07/owl#Class> .
+
+con:MeasurementUnitOfYoungsModulus a <http://www.w3.org/2002/07/owl#Class> .
+
+tt:BAM a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:MeasurementLocation .
+
+tt:CaliperIdentifer a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:Cylinder a cco:Cylindrical,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:DIN_EN_12390_3 a cco:Document,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    obo:BFO_0000051 tt:StandardCode ;
+    cco:has_URI_value "https://www.beuth.de/de/norm/din-en-12390-13/335673954|"^^xsd1:anyURI .
+
+tt:EndTimeValue a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_datetime_value "Enddate"^^xsd1:dateTime .
+
+tt:ExperimentDate a cco:Day,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    obo:RO_0010001 tt:ExperimentDateValue .
+
+tt:ExperimentDateValue a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_datetime_value "ExperimentDate"^^xsd1:dateTime .
+
+tt:LenghtMeasurementDevice a con:Transducer,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:designated_by tt:LenghtMeasurementDeviceIdentifer .
+
+tt:LenghtMeasurementDeviceIdentifer a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:LoadCell a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:MeasurementDevice ;
+    cco:designated_by tt:LoadCellIdentifer .
+
+tt:LoadCellIdentifer a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:LoadRate a con:ForceRate,
+        <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:ProcessParameterSet ;
+    obo:RO_0000086 tt:LoadRate ;
+    obo:RO_0010001 tt:LoadRateValue ;
+    cco:is_input_of tt:YoungsModulusTest .
+
+tt:LoadRateValue a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_decimal_value "3,9"^^xsd1:decimal ;
+    cco:uses_measurement_unit con:KiloNewtonPerSecondMeasurementUnit .
+
+tt:MeasureDiameter a cco:ActOfMeasuring,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_accessory tt:Caliper ;
+    cco:is_measured_by tt:DiameterMeasurementInformation ;
+    cco:process_preceeds tt:AlignSpecimen .
+
+tt:MeasureLength a cco:ActOfMeasuring,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_accessory tt:Caliper ;
+    cco:has_output tt:LengthMeasurementInformation .
+
+tt:Operator a cco:Agent,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:designated_by tt:OperatorName .
+
+tt:OperatorName a cco:DesignativeName,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    obo:RO_0010001 tt:OperatorNameValue .
+
+tt:OperatorNameValue a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_text_value "OperatorString"^^xsd1:string .
+
+tt:ProcessedDataFile a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:AnalysedDataSet ;
+    obo:RO_0010001 tt:FileName,
+        tt:FilePath .
+
+tt:ProcessingOfData a obo:BFO_0000015,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_output tt:ProcessedDataFile .
+
+tt:RawDataFile a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:RawDataSet ;
+    obo:RO_0010001 tt:FileName,
+        tt:FilePath ;
+    cco:is_input_of tt:ProcessingOfData .
+
+tt:SpecimenDiameter a cco:Diameter,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    obo:RO_0010001 tt:SpecimenDiameterValue ;
+    cco:is_measured_by tt:DiameterMeasurementInformation .
+
+tt:SpecimenDiameterValue a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_decimal_value "Diameterdecimal"^^xsd1:decimal ;
+    cco:uses_measurement_unit cco:MillimeterMeasurementUnit .
+
+tt:SpecimenID a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:SpecimenLenght a cco:Length,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    obo:RO_0010001 tt:SpecimenLengthValue ;
+    cco:is_measured_by tt:LengthMeasurementInformation .
+
+tt:SpecimenLengthValue a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_decimal_value "Lengthdecimal"^^xsd1:decimal ;
+    cco:uses_measurement_unit cco:MillimeterMeasurementUnit .
+
+tt:SpecimenMass a cco:Mass,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    obo:RO_0010001 tt:SpecimenMassValue .
+
+tt:SpecimenMassValue a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_decimal_value "Massdecimal"^^xsd1:decimal ;
+    cco:uses_measurement_unit cco:GramMeasurementUnit .
+
+tt:SpecimenYoungsModulusValue a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_decimal_value "Youngsmodulusdecimal"^^xsd1:decimal ;
+    cco:uses_measurement_unit con:GigaPascalMeasurementUnit .
+
+tt:Standard a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:Regulation ;
+    obo:RO_0010001 tt:DIN_EN_12390_3 ;
+    cco:designated_by tt:StandardIdentifier .
+
+tt:StandardIdentifier a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    obo:RO_0010001 tt:StandardCode .
+
+tt:StartTime a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:ExperimentTime ;
+    obo:RO_0010001 tt:StartTimeValue ;
+    cco:interval_finished_by tt:EndTime .
+
+tt:StartTimeValue a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_datetime_value "Startdate"^^xsd1:dateTime .
+
+tt:TestMachineIdentifer a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:YoungsModulusTestSpecimen a cco:ArtifactFunction,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+cco:ActOfPositionChange a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Agent a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:ArtifactFunction a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Cylindrical a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Day a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:DesignativeName a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Diameter a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:DistanceMeasurementArtifactFunction a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Document a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:GramMeasurementUnit a cco:MeasurementUnitOfMass,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+cco:InformationLine a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Length a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Mass a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:MeasurementUnitOfLength a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:MeasurementUnitOfMass a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:RatioMeasurementInformationContentEntity a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:quality a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:ActOfAnalysing a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:AnalysedDataSet a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:EndOfExperiment a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:ExperimentTime a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:ForceMeasurementArtifactFunction a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:MeasurementLocation a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:ProcessParameterSet a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:RawDataSet a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:Regulation a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:Specimen a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:UniversalTestingMachine a <http://www.w3.org/2002/07/owl#Class> .
+
+obo:BFO_0000015 a <http://www.w3.org/2002/07/owl#Class> .
+
+con:Transducer a <http://www.w3.org/2002/07/owl#Class> .
+
+tt:ActofCompression a cco:ActOfMeasuring,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:is_measured_by tt:LenghtMeasurementInformation ;
+    cco:occures_on tt:StartTime ;
+    cco:process_preceeds tt:DeterminYoungsModulus .
+
+tt:AlignSpecimen a cco:ActOfPositionChange,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_accessory tt:TestMachine ;
+    cco:process_preceeds tt:MeasureForce .
+
+tt:Caliper a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:MeasurementDevice ;
+    cco:designated_by tt:CaliperIdentifer .
+
+tt:DeterminYoungsModulus a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:ActOfAnalysing ;
+    cco:has_input tt:ForceMeasurementInformation,
+        tt:LenghtMeasurementInformation ;
+    cco:has_output tt:YoungsModulus .
+
+tt:DiameterMeasurementInformation a cco:DistanceMeasurementInformationContentEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:EndTime a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:EndOfExperiment ;
+    obo:RO_0010001 tt:EndTimeValue .
+
+tt:FileName a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_text_value "FileNamevalue"^^xsd1:String,
+        "FileString"^^xsd1:String .
+
+tt:FilePath a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_URI_value "processed_data_location"^^xsd1:anyURI,
+        "raw_data_location"^^xsd1:anyURI .
+
+tt:ForceMeasurementInformation a cco:RatioMeasurementInformationContentEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:LenghtMeasurementInformation a cco:DistanceMeasurementInformationContentEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:LengthMeasurementInformation a cco:DistanceMeasurementInformationContentEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:MeasureForce a cco:ActOfMeasuring,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_accessory tt:TestMachine ;
+    cco:is_measured_by tt:ForceMeasurementInformation ;
+    cco:process_preceeds tt:ActofCompression .
+
+tt:StandardCode a cco:InformationLine,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+tt:TestMachine a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:UniversalTestingMachine ;
+    obo:BFO_0000051 tt:LenghtMeasurementDevice,
+        tt:LoadCell ;
+    cco:designated_by tt:TestMachineIdentifer .
+
+tt:YoungsModulus a cco:quality,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    obo:RO_0010001 tt:SpecimenYoungsModulusValue .
+
+tt:YoungsModulusTest a con:DeterminationOfSecantModulusOfElasticity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_agent tt:Operator ;
+    cco:has_output tt:RawDataFile ;
+    cco:has_process_part tt:ActofCompression,
+        tt:AlignSpecimen,
+        tt:DeterminYoungsModulus,
+        tt:MeasureDiameter,
+        tt:MeasureForce,
+        tt:MeasureLength ;
+    cco:occures_on tt:ExperimentDate ;
+    cco:occurs_at tt:BAM ;
+    mseo:in_accordance_with tt:Standard .
+
+cco:MillimeterMeasurementUnit a cco:MeasurementUnitOfLength,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+cco:DistanceMeasurementInformationContentEntity a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:MeasurementDevice a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:ActOfMeasuring a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:NonNameIdentifier a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:InformationBearingEntity a <http://www.w3.org/2002/07/owl#Class> .
+

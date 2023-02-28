@@ -1,0 +1,344 @@
+@prefix base: <https://purl.matolab.org/mseo/methods/my_method_shortname/> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix mseo: <https://raw.githubusercontent.com/Mat-O-Lab/MSEO/main/MSEO_mid.owl/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+obo:BFO_0000051 a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+obo:RO_0000086 a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+obo:RO_0010001 a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:CalendarDateIdentifier a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Day a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:DesignativeName a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:DistanceMeasurementInformationContentEntity a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Force a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Lenght a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:ProperAccelaration a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:QualitySpecification a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:RatioMeasurementInformationContentEntity a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Speed a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:designated_by a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_URI_value a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+cco:has_accessory a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_agent a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_decimal_value a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+cco:has_function a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:domain mseo:MeasurementDevice ;
+    rdfs:range cco:DistanceMeasurementArtifactFunction .
+
+cco:has_input a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_output a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_process_part a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_profil a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:has_text_value a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:is_input_of a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:is_measured_by a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:is_ratio_measurement_of a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:occures_on a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:prescribed_by a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:prescribes a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:process_preceeds a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+base:DisplacementMeasurementInformation a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:ForceMeasurementInformation a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:LowerYieldStrenght a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:LowerYieldStrenght .
+
+base:Specimen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:Specimen ;
+    obo:BFO_0000051 base:MeasurementRegion ;
+    cco:designated_by base:SpecimenName ;
+    cco:has_function base:TensileTestSpecimen ;
+    cco:is_input_of base:HotTensilTestMetall .
+
+base:TensileStrength a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:UltimateTensileStrength .
+
+base:TotalExtensionAtFracture a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:EngineeringStrain .
+
+base:UpperYieldStrenght a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:UpperYieldStrenght .
+
+mseo: a <http://www.w3.org/2002/07/owl#Ontology> .
+
+mseo:in_accordance_with a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+cco:ActOfArtifactAssemply a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:ActOfArtifactModification a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:ActOfPositionChange a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Agent a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:ArtifactFunction a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Cylindrical a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Diameter a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:DistanceMeasurementArtifactFunction a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Document a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:InformationLine a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:NonNameIdentifier a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:PlanSpecification a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Round a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:Temperature a <http://www.w3.org/2002/07/owl#Class> .
+
+base:AlignSpecimen a cco:ActOfPositionChange,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:process_preceeds base:SpecimenTempering .
+
+base:Caliper a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:MeasurementDevice ;
+    cco:designated_by base:CaliperIdentifer .
+
+base:CaliperIdentifer a cco:NonNameIdentifier,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:CrossHeadAcccelaration a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:CrossHeadSpeed a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:CrossSection a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:CrossSection ;
+    obo:RO_0000086 base:CrossSectionShape,
+        base:SpecimenDiameter .
+
+base:CrossSectionShape a cco:Round,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:DIN_EN_ISO_6892-2 a cco:Document,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    obo:BFO_0000051 base:StandardCode .
+
+base:DiameterInformationBearingEntity a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:DiameterMeasurementInformation a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    obo:RO_0010001 base:DiameterInformationBearingEntity .
+
+base:ElasticModulus a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:ElasticModulus .
+
+base:ElongationAfterFracture a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:EngineeringStrain .
+
+base:ExperimentDate a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:designated_by base:ExperimentDateIdentifier .
+
+base:ExperimentDateIdentifier a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:HotTensilTestMetall a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:Experiment ;
+    cco:has_agent base:Operator ;
+    cco:has_process_part base:ActOfElongation,
+        base:AlignSpecimen,
+        base:ClampSpecimen,
+        base:GetCharacteristicValues,
+        base:MeasureDiameter,
+        base:MeasureLenght,
+        base:SpecimenTempering ;
+    cco:occures_on base:ExperimentDate ;
+    cco:prescribed_by base:TestPlan ;
+    mseo:in_accordance_with base:Standard .
+
+base:MaximumForce a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:MeasureDiameter a cco:ActOfMeasuring,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_accessory base:Caliper ;
+    cco:process_preceeds base:MeasureLenght .
+
+base:MeasurementRegion a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:MeasurementRegion ;
+    obo:BFO_0000051 base:CrossSection ;
+    obo:RO_0000086 base:MeasurmentRegionShape,
+        base:SpecimenLenght,
+        base:SpecimenTemperature .
+
+base:MeasurmentRegionShape a cco:Cylindrical,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:Operator a cco:Agent,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:designated_by base:OperatorName .
+
+base:OperatorName a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:PermanentElongation a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:PlasticStrain .
+
+base:PermanentExtension a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:PlasticStrain .
+
+base:PlasticExtensionAtMaximumForce a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:PlasticStrain .
+
+base:ProofStrengthPlasticExtension a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:PlasticStrain .
+
+base:ProofStrengthTotalExtension a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:EngineeringStrain .
+
+base:SpecimenDiameter a cco:Diameter,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:is_measured_by base:DiameterMeasurementInformation .
+
+base:SpecimenLenght a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:is_measured_by base:StartLenght ;
+    cco:is_ratio_measurement_of base:StrainMeasurementInformation .
+
+base:SpecimenName a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:SpecimenTemperaturSetPoint a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:prescribes base:SpecimenTemperature .
+
+base:Standard a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:Regulation ;
+    obo:RO_0010001 base:DIN_EN_ISO_6892-2 ;
+    cco:designated_by base:StandardIdentifier .
+
+base:StandardCode a cco:InformationLine,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:StandardIdentifier a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:StartLenght a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:StrainMeasurementInformation a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:TensileTestSpecimen a cco:ArtifactFunction,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:TestPlan a cco:PlanSpecification,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:designated_by base:TestPlanName .
+
+base:TestPlanName a cco:InformationBearingEntity,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:TotalExtensionAtMaximumForce a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:EngineeringStrain .
+
+base:YieldPointExtension a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:EngineeringStrain .
+
+mseo:ActOfAnalysing a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:CrossSection a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:ElasticModulus a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:Experiment a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:LowerYieldStrenght a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:MeasurementRegion a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:Regulation a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:Specimen a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:UltimateTensileStrength a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:UpperYieldStrenght a <http://www.w3.org/2002/07/owl#Class> .
+
+base:ActOfElongation a cco:ActOfMeasuring,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_profil base:CrossHeadAcccelaration,
+        base:CrossHeadSpeed,
+        base:MaximumForce ;
+    cco:process_preceeds base:GetCharacteristicValues .
+
+base:ClampSpecimen a cco:ActOfArtifactAssemply,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:process_preceeds base:MeasureLenght .
+
+base:GetCharacteristicValues a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        mseo:ActOfAnalysing ;
+    cco:has_output base:ElasticModulus,
+        base:ElongationAfterFracture,
+        base:PermanentElongation,
+        base:PermanentExtension,
+        base:PlasticExtensionAtMaximumForce,
+        base:ProofStrengthPlasticExtension,
+        base:ProofStrengthTotalExtension,
+        base:TotalExtensionAtMaximumForce,
+        base:YieldPointExtension .
+
+base:SpecimenTemperature a cco:Temperature,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+base:SpecimenTempering a cco:ActOfArtifactModification,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:has_input base:SpecimenTemperaturSetPoint ;
+    cco:process_preceeds base:ClampSpecimen .
+
+mseo:MeasurementDevice a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:ActOfMeasuring a <http://www.w3.org/2002/07/owl#Class> .
+
+base:MeasureLenght a cco:ActOfMeasuring,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    cco:process_preceeds base:ActOfElongation .
+
+mseo:PlasticStrain a <http://www.w3.org/2002/07/owl#Class> .
+
+mseo:EngineeringStrain a <http://www.w3.org/2002/07/owl#Class> .
+
+cco:InformationBearingEntity a <http://www.w3.org/2002/07/owl#Class> .
+

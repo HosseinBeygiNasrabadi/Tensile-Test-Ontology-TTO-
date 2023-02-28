@@ -1,0 +1,109 @@
+ @prefix bfo: <http://purl.obolibrary.org/obo/> .
+@prefix chebi: <http://purl.obolibrary.org/obo/chebi#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix iof: <https://purl.industrialontologies.org/ontology/core/Core/> .
+@prefix kd: <https://kupferdigital.gitlab.io/ontologies/kupferdigital#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix qudtk: <http://qudt.org/vocab/quantitykind/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+kd: a owl:Ontology ;
+    dc:creator "Gordian Dziwis" ;
+    dc:description "An ontology for the copper domain.",
+        "Ontology code created by Chowlk" ;
+    dc:title "KupferDigital Ontology" ;
+    vann:preferredNamespacePrefix "kd" ;
+    vann:preferredNamespaceUri "kupferdigital.org" ;
+    owl:versionInfo "0.0.1" .
+
+kd:ChemicalComposition a owl:Class ;
+    rdfs:label "Chemical Composition>" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty bfo:BFO_0000178 ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom kd:ChemicalElementFraction ;
+            owl:onProperty bfo:BFO_0000178 ] .
+
+kd:Composition a owl:Class ;
+    rdfs:label "Composition>" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty bfo:BFO_0000178 ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom kd:Fraction ;
+            owl:onProperty bfo:BFO_0000178 ],
+        bfo:BFO_0000002 .
+
+qudt:Quantity a owl:Class ;
+    rdfs:label "Quantity" .
+
+qudt:hasQuantityKind a owl:ObjectProperty ;
+    rdfs:label "has quantity kind" .
+
+qudtk:AmountOfSubstanceConcentrationOfB a owl:NamedIndividual .
+
+qudtk:AmountOfSubstanceFractionOfB a owl:NamedIndividual .
+
+qudtk:AmountOfSubstancePerUnitMass a owl:NamedIndividual .
+
+qudtk:AmountOfSubstancePerUnitVolume a owl:NamedIndividual .
+
+qudtk:MassFraction a owl:NamedIndividual .
+
+qudtk:MoleFraction a owl:NamedIndividual .
+
+qudtk:VolumeFraction a owl:NamedIndividual .
+
+iof:is_about a owl:ObjectProperty ;
+    rdfs:label "is_about" .
+
+bfo:BFO_0000002 a owl:Class ;
+    rdfs:label "B F O_0000002" .
+
+chebi:24431 a owl:Class ;
+    rdfs:label "24431" .
+
+owl:Thing a owl:Class ;
+    rdfs:label "Thing" .
+
+kd:ChemicalElementFraction a owl:Class ;
+    rdfs:label "Chemical Element Fraction>" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom chebi:24431 ;
+            owl:onProperty kd:of ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty kd:of ] .
+
+kd:Fraction a owl:Class ;
+    rdfs:label "Fraction>" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:oneOf ( qudtk:VolumeFraction qudtk:MoleFraction qudtk:MassFraction qudtk:AmountOfSubstanceConcentrationOfB qudtk:AmountOfSubstanceFractionOfB qudtk:AmountOfSubstancePerUnitVolume qudtk:AmountOfSubstancePerUnitMass ) ] ;
+            owl:onProperty qudt:hasQuantityKind ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom owl:Thing ;
+            owl:onProperty kd:of ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty kd:of ],
+        bfo:BFO_0000002,
+        qudt:Quantity .
+
+bfo:BFO_0000178 a owl:ObjectProperty ;
+    rdfs:label "b f o_0000178" .
+
+kd:of a owl:ObjectProperty ;
+    rdfs:label "of",
+        "of>" ;
+    rdfs:domain kd:ChemicalElementFraction,
+        kd:Fraction ;
+    rdfs:range chebi:24431,
+        owl:Thing ;
+    rdfs:subPropertyOf iof:is_about .
+

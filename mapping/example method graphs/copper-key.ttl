@@ -1,0 +1,140 @@
+ @prefix cd: <https://kupferdigital.gitlab.io/ontologies/copper-key#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iof: <https://purl.industrialontologies.org/ontology/core/Core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sto: <https://w3id.org/i40/sto#> .
+
+rdfs:isDefinedBy a owl:ObjectProperty ;
+    rdfs:label "is defined by" .
+
+cd: a owl:Ontology ;
+    dcterms:creator "Gordian Dziwis" ;
+    dcterms:description "An ontology describing the Copper Key.",
+        "Ontology code created by Chowlk" ;
+    dcterms:title "Copper Key Ontology" ;
+    owl:versionInfo "0.0.1" .
+
+cd:CentrifugalCast a owl:Class ;
+    rdfs:label "Centrifugal Cast" ;
+    rdfs:subClassOf cd:Cast .
+
+cd:ChemicalElement a owl:Class ;
+    rdfs:label "Chemical Element" .
+
+cd:ChemicalElementFraction a owl:Class ;
+    rdfs:label "Chemical Element Fraction" ;
+    rdfs:subClassOf qudt:Quantity .
+
+cd:ContinuousCast a owl:Class ;
+    rdfs:label "Continuous Cast" ;
+    rdfs:subClassOf cd:Cast .
+
+cd:CopperAlloy a owl:Class ;
+    rdfs:label "Copper Alloy" ;
+    rdfs:subClassOf cd:Alloy .
+
+cd:CopperKeyDatasheet a owl:Class ;
+    rdfs:label "Copper Key Datasheet" ;
+    rdfs:subClassOf iof:RequirementSpecification .
+
+cd:Forging a owl:Class ;
+    rdfs:label "Forging" ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Ingot a owl:Class ;
+    rdfs:label "Ingot" ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:PermanentMouldCast a owl:Class ;
+    rdfs:label "Permanent Mould Cast" ;
+    rdfs:subClassOf cd:Cast .
+
+cd:PressureDieCast a owl:Class ;
+    rdfs:label "Pressure Die Cast" ;
+    rdfs:subClassOf cd:Cast .
+
+cd:Profile a owl:Class ;
+    rdfs:label "Profile" ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Rod a owl:Class ;
+    rdfs:label "Rod" ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:SandCast a owl:Class ;
+    rdfs:label "Sand Cast" ;
+    rdfs:subClassOf cd:Cast .
+
+cd:Sheet a owl:Class ;
+    rdfs:label "Sheet" ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Strip a owl:Class ;
+    rdfs:label "Strip" ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Tube a owl:Class ;
+    rdfs:label "Tube" ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Wire a owl:Class ;
+    rdfs:label "Wire" ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:WroughtAlloy a owl:Class ;
+    rdfs:label "Wrought Alloy" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cd:WroughtMaterial cd:Alloy ) ] .
+
+cd:materialNumber a owl:DatatypeProperty ;
+    rdfs:label "material number" ;
+    rdfs:subPropertyOf cd:materialDesignation .
+
+cd:materialSymbol a owl:DatatypeProperty ;
+    rdfs:label "material symbol" ;
+    rdfs:subPropertyOf cd:materialDesignation .
+
+cd:ofElement a owl:ObjectProperty ;
+    rdfs:label "of element" .
+
+cd:requires a owl:ObjectProperty ;
+    rdfs:label "requires" .
+
+cd:specifiedBy a owl:ObjectProperty ;
+    rdfs:label "specified by" .
+
+sto:Standard a owl:Class ;
+    rdfs:label "Standard" ;
+    rdfs:subClassOf cd:Specification .
+
+qudt:Quantity a owl:Class ;
+    rdfs:label "Quantity" .
+
+cd:WroughtMaterial a owl:Class ;
+    rdfs:label "Wrought Material" ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+iof:RequirementSpecification a owl:Class ;
+    rdfs:label "Requirement Specification" ;
+    rdfs:subClassOf cd:Specification .
+
+cd:Alloy a owl:Class ;
+    rdfs:label "Alloy" ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+cd:Specification a owl:Class ;
+    rdfs:label "Specification" .
+
+cd:materialDesignation a owl:DatatypeProperty ;
+    rdfs:label "material designation" .
+
+cd:Cast a owl:Class ;
+    rdfs:label "Cast" ;
+    rdfs:subClassOf iof:MaterialArtifact .
+
+iof:MaterialArtifact a owl:Class ;
+    rdfs:label "Material Artifact" .
+

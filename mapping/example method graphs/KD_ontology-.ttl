@@ -1,0 +1,41 @@
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+@prefix chebi: <http://purl.obolibrary.org/obo/chebi#> .
+@prefix iof: <https://purl.industrialontologies.org/ontology/core/Core/> .
+@prefix kd: <https://kupferdigital.gitlab.io/ontologies/kupferdigital#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix qudtk: <http://qudt.org/vocab/quantitykind/> .
+
+bfo:BFO_0000002 a owl:Class .
+
+bfo:BFO_0000178 a owl:ObjectProperty .
+
+chebi:24431 a owl:Class .
+
+qudt:Quantity a owl:Class .
+
+qudt:hasQuantityKind a owl:ObjectProperty .
+
+qudtk:AmountOfSubstanceConcentrationOfB a owl:NamedIndividual .
+
+qudtk:AmountOfSubstanceFractionOfB a owl:NamedIndividual .
+
+qudtk:AmountOfSubstancePerUnitMass a owl:NamedIndividual .
+
+qudtk:AmountOfSubstancePerUnitVolume a owl:NamedIndividual .
+
+qudtk:MassFraction a owl:NamedIndividual .
+
+qudtk:MoleFraction a owl:NamedIndividual .
+
+qudtk:VolumeFraction a owl:NamedIndividual .
+
+owl:Thing a owl:Class .
+
+kd: a owl:Ontology ;
+    owl:versionInfo "0.0.1" .
+
+kd:of a owl:ObjectProperty .
+
+iof:is_about a owl:ObjectProperty .
+

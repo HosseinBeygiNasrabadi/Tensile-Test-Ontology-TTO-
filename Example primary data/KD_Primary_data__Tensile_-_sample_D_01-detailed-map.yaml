@@ -1,0 +1,291 @@
+prefixes: {bfo: 'http://purl.obolibrary.org/obo/', csvw: 'http://www.w3.org/ns/csvw#',
+  data: 'https://gitlab.com/kupferdigital/process-graphs/tensile-test/-/raw/main/Example%20primary%20data/KD_Primary_data__Tensile_-_sample_D_01-detailed-metadata.json/',
+  method: 'https://gitlab.com/kupferdigital/process-graphs/tensile-test/-/raw/main/PmdKdTensile_V2.0.6.ttl/',
+  owl: 'http://www.w3.org/2002/07/owl#', rdf: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+  rdfs: 'http://www.w3.org/2000/01/rdf-schema#', xml: 'http://www.w3.org/XML/1998/namespace',
+  xsd: 'http://www.w3.org/2001/XMLSchema#'}
+base: http://purl.matolab.org/mseo/mappings/
+sources:
+  data_entities: {access: 'https://gitlab.com/kupferdigital/process-graphs/tensile-test/-/raw/main/Example%20primary%20data/KD_Primary_data__Tensile_-_sample_D_01-detailed-metadata.json',
+    iterator: '$..[*]', referenceFormulation: jsonpath}
+mappings:
+  StrainFunction:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(titles)]
+      - [str2, Dehnung]
+    po:
+    - ['bfo:RO_0010002', 'method:StrainFunction~iri']
+  MaterialProviderName:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Werkstoff]
+    po:
+    - ['bfo:RO_0010002', 'method:MaterialProviderName~iri']
+  MeasurementOfCrossheadSeparationRate:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Prüfgeschwindigkeit 1]
+    po:
+    - ['bfo:RO_0010002', 'method:MeasurementOfCrossheadSeparationRate~iri']
+  MeasurementOfEstimatedStrainRateOverTheParallelLength:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Prüfgeschwindigkeit 2]
+    po:
+    - ['bfo:RO_0010002', 'method:MeasurementOfEstimatedStrainRateOverTheParallelLength~iri']
+  MeasurementOfLowerYieldStrength:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Untere Streckgrenze]
+    po:
+    - ['bfo:RO_0010002', 'method:MeasurementOfLowerYieldStrength~iri']
+  MeasurementOfModulusOfElasticity:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, E-Modul]
+    po:
+    - ['bfo:RO_0010002', 'method:MeasurementOfModulusOfElasticity~iri']
+  MeasurementOfPercentageReductionOfArea:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Brucheinschnürung]
+    po:
+    - ['bfo:RO_0010002', 'method:MeasurementOfPercentageReductionOfArea~iri']
+  MeasurementOfPercentageTotalExtensionAtFracture:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Bruchdehnung]
+    po:
+    - ['bfo:RO_0010002', 'method:MeasurementOfPercentageTotalExtensionAtFracture~iri']
+  MeasurementOfSeparationPoint:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Umschaltpunkt]
+    po:
+    - ['bfo:RO_0010002', 'method:MeasurementOfSeparationPoint~iri']
+  MeasurementOfStrainRate:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Prüfgeschwindigkeit 1]
+    po:
+    - ['bfo:RO_0010002', 'method:MeasurementOfStrainRate~iri']
+  MeasurementOfUltimateTensileStrength:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Zugfestigkeit]
+    po:
+    - ['bfo:RO_0010002', 'method:MeasurementOfUltimateTensileStrength~iri']
+  MeasurementOfUpperYieldStrength:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Obere Streckgrenze]
+    po:
+    - ['bfo:RO_0010002', 'method:MeasurementOfUpperYieldStrength~iri']
+  YieldStrength_Rp0.01:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, 'Dehngrenze (Rp0,01)']
+    po:
+    - ['bfo:RO_0010002', 'method:YieldStrength_Rp0.01~iri']
+  YieldStrength_Rp0.02:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, 'Dehngrenze (Rp0,02)']
+    po:
+    - ['bfo:RO_0010002', 'method:YieldStrength_Rp0.02~iri']
+  YieldStrength_Rp0.05:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, 'Dehngrenze (Rp0,05)']
+    po:
+    - ['bfo:RO_0010002', 'method:YieldStrength_Rp0.05~iri']
+  YieldStrength_Rp0.1:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, 'Dehngrenze (Rp0,1)']
+    po:
+    - ['bfo:RO_0010002', 'method:YieldStrength_Rp0.1~iri']
+  YieldStrength_Rp0.2:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, 'Dehngrenze (Rp0,2)']
+    po:
+    - ['bfo:RO_0010002', 'method:YieldStrength_Rp0.2~iri']
+  YieldStrength_Rp0.5:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, 'Dehngrenze (Rp0,5)']
+    po:
+    - ['bfo:RO_0010002', 'method:YieldStrength_Rp0.5~iri']
+  YieldStrength_Rp1:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Dehngrenze (Rp1)]
+    po:
+    - ['bfo:RO_0010002', 'method:YieldStrength_Rp1~iri']
+  YieldStrength_Rp2:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Dehngrenze (Rp2)]
+    po:
+    - ['bfo:RO_0010002', 'method:YieldStrength_Rp2~iri']
+  YieldStrength_Rp5:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Dehngrenze (Rp5)]
+    po:
+    - ['bfo:RO_0010002', 'method:YieldStrength_Rp5~iri']
+  MeasurementOfOriginalGaugeLength:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Anfangsmesslänge]
+    po:
+    - ['bfo:RO_0010002', 'method:MeasurementOfOriginalGaugeLength~iri']
+  TensileTestingMachineIdentifier:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Prüfmaschine]
+    po:
+    - ['bfo:RO_0010002', 'method:TensileTestingMachineIdentifier~iri']
+  TestPieceCompositionIdentifier:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Werkstoff]
+    po:
+    - ['bfo:RO_0010002', 'method:TestPieceCompositionIdentifier~iri']
+  TestPieceCrossSectionShapeIdentifier:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Probenform]
+    po:
+    - ['bfo:RO_0010002', 'method:TestPieceCrossSectionShapeIdentifier~iri']
+  TestPieceIndenter:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Probenbezeichnung]
+    po:
+    - ['bfo:RO_0010002', 'method:TestPieceIndenter~iri']
+  TestStandardIdentifier:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Versuchsbezeichnung]
+    po:
+    - ['bfo:RO_0010002', 'method:TestStandardIdentifier~iri']
+  TestDateIdentifier:
+    sources: [data_entities]
+    s: data:$(@id)
+    condition:
+      function: equal
+      parameters:
+      - [str1, $(label)]
+      - [str2, Versuchs-Datum]
+    po:
+    - ['bfo:RO_0010002', 'method:TestDateIdentifier~iri']

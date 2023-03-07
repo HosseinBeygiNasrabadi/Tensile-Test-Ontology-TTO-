@@ -1,0 +1,1802 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "oa": "http://www.w3.org/ns/oa#",
+            "label": "http://www.w3.org/2000/01/rdf-schema#label",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "qudt": "http://qudt.org/schema/qudt/"
+        }
+    ],
+    "@id": "",
+    "url": "tensile-secondary-dataset.csv",
+    "notes": [
+        {
+            "@id": "Id0",
+            "label": "ID",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 0,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Test Standard"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Test Date"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Test Piece Identifier"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Test Piece Composition"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Test Piece Provider"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Test Piece Preparation"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Test Piece Cross Section Shape"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Test Piece Total Length (mm)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Test Piece Parallel Length (mm)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Tensile Testing Machine Identifier"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Test Temperature (\u00b0C)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Original Cross Section Area (mm\u00b2)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Original Gauge Length (mm)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Extensometer Gauge Length (mm)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Strain Rate (%/s)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Test Speed (mm/min)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Separation Point (%)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Yield Strength Rp0.2 (Mpa)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Slope of elastic region mE (GPa)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Ultimate Tensile Strength (Mpa)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Final Gauge Length After Fracture (mm)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Percentage Elongation After Fracture (%)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Maximum Cross Section Area After Fracture (mm\u00b2)"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "Percentage Reduction Of Area (%)"
+                }
+            ]
+        },
+        {
+            "@id": "11",
+            "label": "1",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 1,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "DIN EN ISO 6892-1:2020"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2022-10-08T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "A_02"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "CuZn38As"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "DKI"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "according to the standard"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "ZUG 005.004"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 54,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 30,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "M33"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 26,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 19.659,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 0.025,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 1,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 240,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 59.5,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 348,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 34.1,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 36.5,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 5.811,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 69,
+                        "@type": "xsd:integer"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "22",
+            "label": "2",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 2,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "DIN EN ISO 6892-1:2020"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2022-09-08T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "B_01"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "CuZn21Si3P"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "DKI"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "according to the standard"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "ZUG 005.004"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 54,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 30,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "M33"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 26,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 19.695,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 0.025,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 1,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 334,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 104,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 680,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 31.1,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 24.5,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12.161,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 38,
+                        "@type": "xsd:integer"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "33",
+            "label": "3",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 3,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "DIN EN ISO 6892-1:2020"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2022-11-08T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "B_02"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "CuZn21Si3P"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "DKI"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "according to the standard"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "ZUG 005.004"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 54,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 30,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "M33"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 27,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 19.656,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 0.025,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 1,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 352,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 106,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 682,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 31.4,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25.5,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12.41,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 37,
+                        "@type": "xsd:integer"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "44",
+            "label": "4",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 4,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "DIN EN ISO 6892-1:2020"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2022-09-08T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "C_08"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "CuNiSi"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "fem"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "according to the standard"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "ZUG 005.004"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 54,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 30,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "M33"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 26,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 19.601,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 0.025,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 1,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 80.7,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 64.9,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 236,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 35.7,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 43,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 2.392,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 88,
+                        "@type": "xsd:integer"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "55",
+            "label": "5",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 5,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "DIN EN ISO 6892-1:2020"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2022-11-08T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "C_09"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "CuNiSi"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "fem"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "according to the standard"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "ZUG 005.004"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 54,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 30,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "M33"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 27,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 19.638,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 0.025,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 1,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 79.1,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 68.5,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 207,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 34.8,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 39,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 3.258,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 83,
+                        "@type": "xsd:integer"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "66",
+            "label": "6",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 6,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "DIN EN ISO 6892-1:2020"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2022-10-08T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "D_01"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "CuSn6"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "fem"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "according to the standard"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "ZUG 005.004"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 54,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 30,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "M33"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 26,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 19.643,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 0.025,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 1,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 119,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 58.8,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 314,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 33.4,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 33.5,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 4.524,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 77,
+                        "@type": "xsd:integer"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "77",
+            "label": "7",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 7,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "DIN EN ISO 6892-1:2020"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2022-11-08T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "D_02"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "CuSn6"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "fem"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "according to the standard"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "ZUG 005.004"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 54,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 30,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "M33"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 27,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 19.659,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 0.025,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 1,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 111,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 71,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 261,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 35.9,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 43.5,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 5.817,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 74,
+                        "@type": "xsd:integer"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "88",
+            "label": "8",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 8,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "DIN EN ISO 6892-1:2020"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2022-10-08T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "E_01"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "CuSn12"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "fem"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "according to the standard"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "ZUG 005.004"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 54,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 30,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "M33"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 26,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 19.648,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 0.025,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 1,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 169,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 102,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 331,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 27.8,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 11,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 17.609,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 10,
+                        "@type": "xsd:integer"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "99",
+            "label": "9",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 9,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "DIN EN ISO 6892-1:2020"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2022-11-08T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "E_02"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "CuSn12"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "fem"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "according to the standard"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "ZUG 005.004"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 54,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 30,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "M33"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 27,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 19.661,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 0.025,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 1,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 160,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 70.4,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 380,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 34.8,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 39,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12.038,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 39,
+                        "@type": "xsd:integer"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "1010",
+            "label": "10",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 10,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "DIN EN ISO 6892-1:2020"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2022-10-08T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "F_01"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "CuNi12Al3"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "fem"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "according to the standard"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "ZUG 005.004"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 54,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 30,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "M33"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 26,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 19.661,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 0.025,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 1,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 409,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 114,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 637,
+                        "@type": "xsd:integer"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 31.1,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 24.5,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12.347,
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 37,
+                        "@type": "xsd:integer"
+                    }
+                }
+            ]
+        }
+    ],
+    "dialect": {
+        "delimiter": ",",
+        "skipRows": 11,
+        "headerRowCount": 0,
+        "encoding": "UTF-8"
+    }
+}

@@ -1,0 +1,428 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "oa": "http://www.w3.org/ns/oa#",
+            "label": "http://www.w3.org/2000/01/rdf-schema#label",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "qudt": "http://qudt.org/schema/qudt/"
+        }
+    ],
+    "@id": "",
+    "url": "tensile-secondary-dataset.csv",
+    "notes": [
+        {
+            "@id": "1DinEnIso68921202010082022A02Cuzn38AsDkiAccordingToTheStandardZug0050045430M3326191",
+            "label": "1;DIN EN ISO 6892-1:2020;10.08.2022;A_02;CuZn38As;DKI;according to the standard;ZUG 005.004;54;30;M33;26;19",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 1,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "659;25;25;0"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "025;12;1;240;59"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "5;348;34"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2036-01-07T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2023-05-05T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "811;69"
+                }
+            ]
+        },
+        {
+            "@id": "2DinEnIso68921202009082022B01Cuzn21Si3PDkiAccordingToTheStandardZug0050045430M3326192",
+            "label": "2;DIN EN ISO 6892-1:2020;09.08.2022;B_01;CuZn21Si3P;DKI;according to the standard;ZUG 005.004;54;30;M33;26;19",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 2,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "695;25;25;0"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "025;12;1;334;104;680;31"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2023-01-24T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2023-05-12T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "161;38"
+                }
+            ]
+        },
+        {
+            "@id": "3DinEnIso68921202011082022B02Cuzn21Si3PDkiAccordingToTheStandardZug0050045430M3327193",
+            "label": "3;DIN EN ISO 6892-1:2020;11.08.2022;B_02;CuZn21Si3P;DKI;according to the standard;ZUG 005.004;54;30;M33;27;19",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 3,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "656;25;25;0"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "025;12;1;352;106;682;31"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2023-04-25T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2023-05-12T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "41;37"
+                }
+            ]
+        },
+        {
+            "@id": "4DinEnIso68921202009082022C08CunisiFemAccordingToTheStandardZug0050045430M3326194",
+            "label": "4;DIN EN ISO 6892-1:2020;09.08.2022;C_08;CuNiSi;fem;according to the standard;ZUG 005.004;54;30;M33;26;19",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 4,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "601;25;25;0"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "025;12;1;80"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2064-07-07T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "9;236;35"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "7;43;2"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "392;88"
+                }
+            ]
+        },
+        {
+            "@id": "5DinEnIso68921202011082022C09CunisiFemAccordingToTheStandardZug0050045430M3327195",
+            "label": "5;DIN EN ISO 6892-1:2020;11.08.2022;C_09;CuNiSi;fem;according to the standard;ZUG 005.004;54;30;M33;27;19",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 5,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "638;25;25;0"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "025;12;1;79"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2068-01-07T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "5;207;34"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "8;39;3"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "258;83"
+                }
+            ]
+        },
+        {
+            "@id": "6DinEnIso68921202010082022D01Cusn6FemAccordingToTheStandardZug0050045430M3326196",
+            "label": "6;DIN EN ISO 6892-1:2020;10.08.2022;D_01;CuSn6;fem;according to the standard;ZUG 005.004;54;30;M33;26;19",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 6,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "643;25;25;0"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "025;12;1;119;58"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "8;314;33"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2033-04-07T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2023-05-04T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "524;77"
+                }
+            ]
+        },
+        {
+            "@id": "7DinEnIso68921202011082022D02Cusn6FemAccordingToTheStandardZug0050045430M3327197",
+            "label": "7;DIN EN ISO 6892-1:2020;11.08.2022;D_02;CuSn6;fem;according to the standard;ZUG 005.004;54;30;M33;27;19",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 7,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "659;25;25;0"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "025;12;1;111;71;261;35"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2043-09-07T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2023-05-05T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "817;74"
+                }
+            ]
+        },
+        {
+            "@id": "8DinEnIso68921202010082022E01Cusn12FemAccordingToTheStandardZug0050045430M3326198",
+            "label": "8;DIN EN ISO 6892-1:2020;10.08.2022;E_01;CuSn12;fem;according to the standard;ZUG 005.004;54;30;M33;26;19",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 8,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "648;25;25;0"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "025;12;1;169;102;331;27"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2017-08-11T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "0609-10-07T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "9DinEnIso68921202011082022E02Cusn12FemAccordingToTheStandardZug0050045430M3327199",
+            "label": "9;DIN EN ISO 6892-1:2020;11.08.2022;E_02;CuSn12;fem;according to the standard;ZUG 005.004;54;30;M33;27;19",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 9,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "661;25;25;0"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "025;12;1;160;70"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "4;380;34"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "8;39;12"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "038;39"
+                }
+            ]
+        },
+        {
+            "@id": "10DinEnIso68921202010082022F01Cuni12Al3FemAccordingToTheStandardZug0050045430M33261910",
+            "label": "10;DIN EN ISO 6892-1:2020;10.08.2022;F_01;CuNi12Al3;fem;according to the standard;ZUG 005.004;54;30;M33;26;19",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 10,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "661;25;25;0"
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "025;12;1;409;114;637;31"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2023-01-24T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2023-05-12T00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {
+                    "@type": "oa:TextualBody",
+                    "@purpose": "oa:tagging",
+                    "@value": "347;37"
+                }
+            ]
+        }
+    ],
+    "dialect": {
+        "delimiter": ",",
+        "skipRows": 11,
+        "headerRowCount": 0,
+        "encoding": "UTF-8-SIG"
+    }
+}

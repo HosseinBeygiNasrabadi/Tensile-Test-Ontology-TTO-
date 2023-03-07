@@ -1,0 +1,196 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "oa": "http://www.w3.org/ns/oa#",
+            "label": "http://www.w3.org/2000/01/rdf-schema#label",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "qudt": "http://qudt.org/schema/qudt/"
+        }
+    ],
+    "@id": "",
+    "url": "tensile-secondary-dataset.csv",
+    "dialect": {
+        "delimiter": ";",
+        "skipRows": 0,
+        "headerRowCount": 1,
+        "encoding": "UTF-8-SIG"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "titles": "ID",
+                "@id": "Id",
+                "@type": "Column"
+            },
+            {
+                "titles": "Test Standard",
+                "@id": "TestStandard",
+                "@type": "Column"
+            },
+            {
+                "titles": "Test Date",
+                "@id": "TestDate",
+                "@type": "Column"
+            },
+            {
+                "titles": "Test Piece Identifier",
+                "@id": "TestPieceIdentifier",
+                "@type": "Column"
+            },
+            {
+                "titles": "Test Piece Composition",
+                "@id": "TestPieceComposition",
+                "@type": "Column"
+            },
+            {
+                "titles": "Test Piece Provider",
+                "@id": "TestPieceProvider",
+                "@type": "Column"
+            },
+            {
+                "titles": "Test Piece Preparation",
+                "@id": "TestPiecePreparation",
+                "@type": "Column"
+            },
+            {
+                "titles": "Test Piece Cross Section Shape",
+                "@id": "TestPieceCrossSectionShape",
+                "@type": "Column"
+            },
+            {
+                "titles": "Test Piece Total Length",
+                "@id": "TestPieceTotalLength",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/MilliM",
+                    "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                }
+            },
+            {
+                "titles": "Test Piece Parallel Length",
+                "@id": "TestPieceParallelLength",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/MilliM",
+                    "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                }
+            },
+            {
+                "titles": "Tensile Testing Machine Identifier",
+                "@id": "TensileTestingMachineIdentifier",
+                "@type": "Column"
+            },
+            {
+                "titles": "Test Temperature",
+                "@id": "TestTemperature",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/DEG_C",
+                    "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                }
+            },
+            {
+                "titles": "Original Cross Section Area",
+                "@id": "OriginalCrossSectionArea",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/MilliM2",
+                    "@type": "http://qudt.org/schema/qudt/Unit"
+                }
+            },
+            {
+                "titles": "Original Gauge Length",
+                "@id": "OriginalGaugeLength",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/MilliM",
+                    "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                }
+            },
+            {
+                "titles": "Extensometer Gauge Length",
+                "@id": "ExtensometerGaugeLength",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/MilliM",
+                    "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                }
+            },
+            {
+                "titles": "Strain Rate (%/s)",
+                "@id": "StrainRateS",
+                "@type": "Column"
+            },
+            {
+                "titles": "Test Speed",
+                "@id": "TestSpeed",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/MilliM-PER-MIN",
+                    "@type": "http://qudt.org/schema/qudt/Unit"
+                }
+            },
+            {
+                "titles": "Separation Point",
+                "@id": "SeparationPoint",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/PERCENT",
+                    "@type": "http://qudt.org/schema/qudt/Unit"
+                }
+            },
+            {
+                "titles": "Yield Strength Rp0.2 (Mpa)",
+                "@id": "YieldStrengthRp02Mpa",
+                "@type": "Column"
+            },
+            {
+                "titles": "Slope of elastic region mE (GPa)",
+                "@id": "SlopeOfElasticRegionMeGpa",
+                "@type": "Column"
+            },
+            {
+                "titles": "Ultimate Tensile Strength (Mpa)",
+                "@id": "UltimateTensileStrengthMpa",
+                "@type": "Column"
+            },
+            {
+                "titles": "Final Gauge Length After Fracture",
+                "@id": "FinalGaugeLengthAfterFracture",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/MilliM",
+                    "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                }
+            },
+            {
+                "titles": "Percentage Elongation After Fracture",
+                "@id": "PercentageElongationAfterFracture",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/PERCENT",
+                    "@type": "http://qudt.org/schema/qudt/Unit"
+                }
+            },
+            {
+                "titles": "Maximum Cross Section Area After Fracture",
+                "@id": "MaximumCrossSectionAreaAfterFracture",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/MilliM2",
+                    "@type": "http://qudt.org/schema/qudt/Unit"
+                }
+            },
+            {
+                "titles": "Percentage Reduction Of Area",
+                "@id": "PercentageReductionOfArea",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/PERCENT",
+                    "@type": "http://qudt.org/schema/qudt/Unit"
+                }
+            }
+        ]
+    }
+}

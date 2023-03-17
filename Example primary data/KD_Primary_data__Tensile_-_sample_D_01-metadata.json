@@ -1,1 +1,591 @@
-{"@context":["http://www.w3.org/ns/csvw",{"oa":"http://www.w3.org/ns/oa#","label":"http://www.w3.org/2000/01/rdf-schema#label","xsd":"http://www.w3.org/2001/XMLSchema#","qudt":"http://qudt.org/schema/qudt/"}],"@id":"","url":"KD_Primary_data__Tensile_-_sample_D_01.lis","notes":[{"@id":"Bam0","label":"BAM","@type":"oa:Annotation","rownum":{"@value":0,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"qudt:QuantityValue","qudt:value":{"@value":5.2,"@type":"xsd:decimal"}},{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"*ZUG01-V03*"},{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"VH5204_D_01.lis"}]},{"@id":"Versuchsbezeichnung3","label":"Versuchsbezeichnung","@type":"oa:Annotation","rownum":{"@value":3,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"ZUG-Versuch"}]},{"@id":"VersuchsDatum4","label":"Versuchs-Datum","@type":"oa:Annotation","rownum":{"@value":4,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"qudt:QuantityValue","qudt:value":{"@value":"2022-10-08T00:00:00","@type":"xsd:dateTime"}}]},{"@id":"Projekt5","label":"Projekt","@type":"oa:Annotation","rownum":{"@value":5,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"VH5204"}]},{"@id":"Werkstoff6","label":"Werkstoff","@type":"oa:Annotation","rownum":{"@value":6,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"CuSn12"}]},{"@id":"Bearbeiter7","label":"Bearbeiter","@type":"oa:Annotation","rownum":{"@value":7,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"Uhlemann"}]},{"@id":"Pruefmaschine8","label":"Prüfmaschine","@type":"oa:Annotation","rownum":{"@value":8,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"M33"}]},{"@id":"Probenbezeichnung9","label":"Probenbezeichnung","@type":"oa:Annotation","rownum":{"@value":9,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"D_01"}]},{"@id":"Probenform10","label":"Probenform","@type":"oa:Annotation","rownum":{"@value":10,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"ZUG"},{"@type":"qudt:QuantityValue","qudt:value":{"@value":5.004,"@type":"xsd:decimal"}}]},{"@id":"Probenquerschnitt11","label":"Probenquerschnitt","@type":"oa:Annotation","rownum":{"@value":11,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"qudt:QuantityValue","qudt:value":{"@value":19.64,"@type":"xsd:decimal"},"qudt:unit":{"@id":"http://qudt.org/vocab/unit/MilliM2","@type":"http://qudt.org/schema/qudt/Unit"}}]},{"@id":"Prueftemperatur12","label":"Prüftemperatur","@type":"oa:Annotation","rownum":{"@value":12,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"qudt:QuantityValue","qudt:value":{"@value":26,"@type":"xsd:integer"},"qudt:unit":{"@id":"http://qudt.org/vocab/unit/DEG_C","@type":"http://qudt.org/schema/qudt/DerivedUnit"}}]},{"@id":"Pruefgeschwindigkeit13","label":"Prüfgeschwindigkeit","@type":"oa:Annotation","rownum":{"@value":13,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"qudt:QuantityValue","qudt:value":{"@value":1,"@type":"xsd:integer"}},{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"%/s"},{"@type":"qudt:QuantityValue","qudt:value":{"@value":0.025,"@type":"xsd:decimal"}}]},{"@id":"Umschaltpunkt14","label":"Umschaltpunkt","@type":"oa:Annotation","rownum":{"@value":14,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"qudt:QuantityValue","qudt:value":{"@value":1,"@type":"xsd:integer"},"qudt:unit":{"@id":"http://qudt.org/vocab/unit/PERCENT","@type":"http://qudt.org/schema/qudt/Unit"}}]},{"@id":"Anfangsmesslaenge16","label":"Anfangsmesslänge","@type":"oa:Annotation","rownum":{"@value":16,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"qudt:QuantityValue","qudt:value":{"@value":25,"@type":"xsd:integer"},"qudt:unit":{"@id":"http://qudt.org/vocab/unit/MilliM","@type":"http://qudt.org/schema/qudt/DerivedUnit"}}]},{"@id":"EModul17","label":"E-Modul","@type":"oa:Annotation","rownum":{"@value":17,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"qudt:QuantityValue","qudt:value":{"@value":58.8,"@type":"xsd:decimal"},"qudt:unit":{"@id":"http://qudt.org/vocab/unit/GigaPA","@type":"http://qudt.org/schema/qudt/Unit"}}]},{"@id":"Dehngrenze18","label":"Dehngrenze","@type":"oa:Annotation","rownum":{"@value":18,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"(Rp0,01)"},{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"-"}]},{"@id":"Obere27","label":"Obere","@type":"oa:Annotation","rownum":{"@value":27,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"Streckgrenze"},{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"-"}]},{"@id":"Untere28","label":"Untere","@type":"oa:Annotation","rownum":{"@value":28,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"Streckgrenze"},{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"-"}]},{"@id":"Zugfestigkeit29","label":"Zugfestigkeit","@type":"oa:Annotation","rownum":{"@value":29,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"qudt:QuantityValue","qudt:value":{"@value":314,"@type":"xsd:integer"},"qudt:unit":{"@id":"http://qudt.org/vocab/unit/MegaPA","@type":"http://qudt.org/schema/qudt/Unit"}}]},{"@id":"Gleichmassdehnung30","label":"Gleichmaßdehnung","@type":"oa:Annotation","rownum":{"@value":30,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"oa:TextualBody","oa:purpose":"oa:tagging","oa:format":"text/plain","oa:value":"-"}]},{"@id":"Bruchdehnung31","label":"Bruchdehnung","@type":"oa:Annotation","rownum":{"@value":31,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"qudt:QuantityValue","qudt:value":{"@value":33.5,"@type":"xsd:decimal"},"qudt:unit":{"@id":"http://qudt.org/vocab/unit/PERCENT","@type":"http://qudt.org/schema/qudt/Unit"}}]},{"@id":"Brucheinschnuerung32","label":"Brucheinschnürung","@type":"oa:Annotation","rownum":{"@value":32,"@type":"xsd:integer"},"oa:hasBody":[{"@type":"qudt:QuantityValue","qudt:value":{"@value":77,"@type":"xsd:integer"},"qudt:unit":{"@id":"http://qudt.org/vocab/unit/PERCENT","@type":"http://qudt.org/schema/qudt/Unit"}}]}],"dialect":{"delimiter":"\t","skipRows":39,"headerRowCount":2,"encoding":"latin-1"},"tableSchema":{"columns":[{"name":"GID","titles":["GID","Generic Identifier"],"datatype":"string","required":true,"suppressOutput":true,"@type":"Column"},{"titles":["Zeit","sec","Zeit"],"@id":"Zeit","name":"Zeit","qudt:unit":{"@id":"http://qudt.org/vocab/unit/SEC","@type":"http://qudt.org/schema/qudt/Unit"},"@type":["Column","qudt:QuantityValue"]},{"titles":["Weg","mm","Weg"],"@id":"Weg","name":"Weg","qudt:unit":{"@id":"http://qudt.org/vocab/unit/MilliM","@type":"http://qudt.org/schema/qudt/DerivedUnit"},"@type":["Column","qudt:QuantityValue"]},{"titles":["Kraft","kN","Kraft"],"@id":"Kraft","name":"Kraft","qudt:unit":{"@id":"http://qudt.org/vocab/unit/KiloN","@type":"http://qudt.org/schema/qudt/Unit"},"@type":["Column","qudt:QuantityValue"]},{"titles":["Dehnung","%","Dehnung"],"@id":"Dehnung","name":"Dehnung","qudt:unit":{"@id":"http://qudt.org/vocab/unit/PERCENT","@type":"http://qudt.org/schema/qudt/Unit"},"@type":["Column","qudt:QuantityValue"]},{"titles":["Spannung","MPa","Spannung"],"@id":"Spannung","name":"Spannung","qudt:unit":{"@id":"http://qudt.org/vocab/unit/MegaPA","@type":"http://qudt.org/schema/qudt/Unit"},"@type":["Column","qudt:QuantityValue"]}],"primaryKey":"GID","aboutUrl":"#gid-{GID}"}}
+{
+    "@context": [
+      "http://www.w3.org/ns/csvw",
+      {
+        "oa": "http://www.w3.org/ns/oa#",
+        "label": "http://www.w3.org/2000/01/rdf-schema#label",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "qudt": "http://qudt.org/schema/qudt/"
+      }
+    ],
+    "@id": "",
+    "url": "KD_Primary_data__Tensile_-_sample_D_01.lis",
+    "notes": [
+      {
+        "@id": "Bam0",
+        "label": "BAM",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 0,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "qudt:QuantityValue",
+            "qudt:value": {
+              "@value": 5.2,
+              "@type": "xsd:decimal"
+            }
+          },
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "*ZUG01-V03*"
+          },
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "VH5204_D_01.lis"
+          }
+        ]
+      },
+      {
+        "@id": "Versuchsbezeichnung3",
+        "label": "Versuchsbezeichnung",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 3,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "ZUG-Versuch"
+          }
+        ]
+      },
+      {
+        "@id": "VersuchsDatum4",
+        "label": "Versuchs-Datum",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 4,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "qudt:QuantityValue",
+            "qudt:value": {
+              "@value": "2022-10-08T00:00:00",
+              "@type": "xsd:dateTime"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "Projekt5",
+        "label": "Projekt",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 5,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "VH5204"
+          }
+        ]
+      },
+      {
+        "@id": "Werkstoff6",
+        "label": "Werkstoff",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 6,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "CuSn12"
+          }
+        ]
+      },
+      {
+        "@id": "Bearbeiter7",
+        "label": "Bearbeiter",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 7,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "Uhlemann"
+          }
+        ]
+      },
+      {
+        "@id": "Pruefmaschine8",
+        "label": "Prüfmaschine",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 8,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "M33"
+          }
+        ]
+      },
+      {
+        "@id": "Probenbezeichnung9",
+        "label": "Probenbezeichnung",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 9,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "D_01"
+          }
+        ]
+      },
+      {
+        "@id": "Probenform10",
+        "label": "Probenform",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 10,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "ZUG"
+          },
+          {
+            "@type": "qudt:QuantityValue",
+            "qudt:value": {
+              "@value": 5.004,
+              "@type": "xsd:decimal"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "Probenquerschnitt11",
+        "label": "Probenquerschnitt",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 11,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "qudt:QuantityValue",
+            "qudt:value": {
+              "@value": 19.64,
+              "@type": "xsd:decimal"
+            },
+            "qudt:unit": {
+              "@id": "http://qudt.org/vocab/unit/MilliM2",
+              "@type": "http://qudt.org/schema/qudt/Unit"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "Prueftemperatur12",
+        "label": "Prüftemperatur",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 12,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "qudt:QuantityValue",
+            "qudt:value": {
+              "@value": 26,
+              "@type": "xsd:integer"
+            },
+            "qudt:unit": {
+              "@id": "http://qudt.org/vocab/unit/DEG_C",
+              "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "Pruefgeschwindigkeit13",
+        "label": "Prüfgeschwindigkeit",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 13,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "qudt:QuantityValue",
+            "qudt:value": {
+              "@value": 1,
+              "@type": "xsd:integer"
+            }
+          },
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "%/s"
+          },
+          {
+            "@type": "qudt:QuantityValue",
+            "qudt:value": {
+              "@value": 0.025,
+              "@type": "xsd:decimal"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "Umschaltpunkt14",
+        "label": "Umschaltpunkt",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 14,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "qudt:QuantityValue",
+            "qudt:value": {
+              "@value": 1,
+              "@type": "xsd:integer"
+            },
+            "qudt:unit": {
+              "@id": "http://qudt.org/vocab/unit/PERCENT",
+              "@type": "http://qudt.org/schema/qudt/Unit"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "Anfangsmesslaenge16",
+        "label": "Anfangsmesslänge",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 16,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "qudt:QuantityValue",
+            "qudt:value": {
+              "@value": 25,
+              "@type": "xsd:integer"
+            },
+            "qudt:unit": {
+              "@id": "http://qudt.org/vocab/unit/MilliM",
+              "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "EModul17",
+        "label": "E-Modul",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 17,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "qudt:QuantityValue",
+            "qudt:value": {
+              "@value": 58.8,
+              "@type": "xsd:decimal"
+            },
+            "qudt:unit": {
+              "@id": "http://qudt.org/vocab/unit/GigaPA",
+              "@type": "http://qudt.org/schema/qudt/Unit"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "Dehngrenze18",
+        "label": "Dehngrenze",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 18,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "(Rp0,01)"
+          },
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "-"
+          }
+        ]
+      },
+      {
+        "@id": "Obere27",
+        "label": "Obere",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 27,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "Streckgrenze"
+          },
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "-"
+          }
+        ]
+      },
+      {
+        "@id": "Untere28",
+        "label": "Untere",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 28,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "Streckgrenze"
+          },
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "-"
+          }
+        ]
+      },
+      {
+        "@id": "Zugfestigkeit29",
+        "label": "Zugfestigkeit",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 29,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "qudt:QuantityValue",
+            "qudt:value": {
+              "@value": 314,
+              "@type": "xsd:integer"
+            },
+            "qudt:unit": {
+              "@id": "http://qudt.org/vocab/unit/MegaPA",
+              "@type": "http://qudt.org/schema/qudt/Unit"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "Gleichmassdehnung30",
+        "label": "Gleichmaßdehnung",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 30,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "oa:TextualBody",
+            "oa:purpose": "oa:tagging",
+            "oa:format": "text/plain",
+            "oa:value": "-"
+          }
+        ]
+      },
+      {
+        "@id": "Bruchdehnung31",
+        "label": "Bruchdehnung",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 31,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "qudt:QuantityValue",
+            "qudt:value": {
+              "@value": 33.5,
+              "@type": "xsd:decimal"
+            },
+            "qudt:unit": {
+              "@id": "http://qudt.org/vocab/unit/PERCENT",
+              "@type": "http://qudt.org/schema/qudt/Unit"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "Brucheinschnuerung32",
+        "label": "Brucheinschnürung",
+        "@type": "oa:Annotation",
+        "rownum": {
+          "@value": 32,
+          "@type": "xsd:integer"
+        },
+        "oa:hasBody": [
+          {
+            "@type": "qudt:QuantityValue",
+            "qudt:value": {
+              "@value": 77,
+              "@type": "xsd:integer"
+            },
+            "qudt:unit": {
+              "@id": "http://qudt.org/vocab/unit/PERCENT",
+              "@type": "http://qudt.org/schema/qudt/Unit"
+            }
+          }
+        ]
+      }
+    ],
+    "dialect": {
+      "delimiter": "\t",
+      "skipRows": 39,
+      "headerRowCount": 2,
+      "encoding": "latin-1"
+    },
+    "tableSchema": {
+      "columns": [
+        {
+          "name": "GID",
+          "titles": [
+            "GID",
+            "Generic Identifier"
+          ],
+          "datatype": "string",
+          "required": true,
+          "suppressOutput": true,
+          "@type": "Column"
+        },
+        {
+          "titles": [
+            "Zeit",
+            "sec",
+            "Zeit"
+          ],
+          "@id": "Zeit",
+          "name": "Zeit",
+          "qudt:unit": {
+            "@id": "http://qudt.org/vocab/unit/SEC",
+            "@type": "http://qudt.org/schema/qudt/Unit"
+          },
+          "@type": [
+            "Column",
+            "qudt:QuantityValue"
+          ]
+        },
+        {
+          "titles": [
+            "Weg",
+            "mm",
+            "Weg"
+          ],
+          "@id": "Weg",
+          "name": "Weg",
+          "qudt:unit": {
+            "@id": "http://qudt.org/vocab/unit/MilliM",
+            "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+          },
+          "@type": [
+            "Column",
+            "qudt:QuantityValue"
+          ]
+        },
+        {
+          "titles": [
+            "Kraft",
+            "kN",
+            "Kraft"
+          ],
+          "@id": "Kraft",
+          "name": "Kraft",
+          "qudt:unit": {
+            "@id": "http://qudt.org/vocab/unit/KiloN",
+            "@type": "http://qudt.org/schema/qudt/Unit"
+          },
+          "@type": [
+            "Column",
+            "qudt:QuantityValue"
+          ]
+        },
+        {
+          "titles": [
+            "Dehnung",
+            "%",
+            "Dehnung"
+          ],
+          "@id": "Dehnung",
+          "name": "Dehnung",
+          "qudt:unit": {
+            "@id": "http://qudt.org/vocab/unit/PERCENT",
+            "@type": "http://qudt.org/schema/qudt/Unit"
+          },
+          "@type": [
+            "Column",
+            "qudt:QuantityValue"
+          ]
+        },
+        {
+          "titles": [
+            "Spannung",
+            "MPa",
+            "Spannung"
+          ],
+          "@id": "Spannung",
+          "name": "Spannung",
+          "qudt:unit": {
+            "@id": "http://qudt.org/vocab/unit/MegaPA",
+            "@type": "http://qudt.org/schema/qudt/Unit"
+          },
+          "@type": [
+            "Column",
+            "qudt:QuantityValue"
+          ]
+        }
+      ],
+      "primaryKey": "GID",
+      "aboutUrl": "#gid-{GID}"
+    }
+}
+  

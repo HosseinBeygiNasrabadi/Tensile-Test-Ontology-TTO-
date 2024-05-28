@@ -8,7 +8,6 @@ V2 developed using BFO+CCO top-level ontologies.
 
 V3 developed using PROVO+PMDco top-level ontologies.
 
-V4 developed using BFO+IOF top-level ontologies.
 
 ## Getting started
 
